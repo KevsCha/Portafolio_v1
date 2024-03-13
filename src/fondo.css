@@ -28,14 +28,26 @@ span{
     background-color: rgb(85, 187, 255);
     animation: top-left 5s infinite alternate;
 }
-.dis-sem-left{
+.dis-s-sem-left{
     top: 29%;
     left: 6.5%;
+    background-color: aqua;
+    animation: dis-s-sem-left 4s linear infinite alternate;
+}
+.sem-left{
+    top: 39.2%;
+    left: 0%;
+    background-color: azure;
+    animation: sem-left 4s linear infinite alternate;
+}
+.dis-sem-left{
+    top: 42.6%;
+    left: 9%;
     background-color: aqua;
     animation: dis-sem-left 4s linear infinite alternate;
 }
 .mid-left{
-    top: 39%;
+    top: 50.6%;
     left: 0%;
     background-color: red;
     animation: mid-left 4s linear infinite alternate;
@@ -75,31 +87,37 @@ span{
     top: 60.2%;
     left: 99.7%;
     background-color: red;
-    animation: move 0s linear infinite alternate;
+    animation: sem-right 2s linear infinite alternate;
 }
 .sem-s-right{
     top: 63.3%;
     left: 99.7%;
     background-color: violet;
-    animation: move 0s linear infinite alternate;
+    animation: sem-s-right 3.5s linear infinite alternate;
 }
 .sem-m-right{
     top: 72.5%;
     left: 99.7%;
     background-color: aqua;
-    animation: move 0s linear infinite alternate;
+    animation: sem-m-right 5s linear infinite alternate;
 }
 .sem-bott-right{
     top: 74.3%;
     left: 99.7%;
-    background-color: aqua;
-    animation: move 0s linear infinite alternate;
+    background-color: violet;
+    animation: sem-bott-right 2s linear infinite alternate;
 }
-.bottom-right{
+.sem-s-bott-right{
     top: 78.7%;
     left: 99.7%;
+    background-color: aquamarine;
+    animation: sem-s-bott-right 1.5s linear infinite alternate;
+}
+.bottom-right{
+    top: 82.2%;
+    left: 99.7%;
     background-color: aqua;
-    animation: move 0s linear infinite alternate;
+    animation: bottom-right 4s linear infinite alternate;
 }
 @media only screen and (min-width:1440px) {
     /* -----------------------Animation Izquierda----------------------------- */
@@ -133,7 +151,7 @@ span{
             height: 10px;
         }
     }
-    @keyframes dis-sem-left{
+    @keyframes dis-s-sem-left{
         0% {
             transform: translate(0, 0);
         }
@@ -159,7 +177,7 @@ span{
             transform: translate(54.5vw, 3vh);
         }
     }
-    @keyframes mid-left {
+    @keyframes sem-left {
         0% {
             transform: translate(0, 0);
         }
@@ -183,6 +201,40 @@ span{
         }
         100%{
             transform: translate(34vw, 2vh);
+        }
+    }
+    @keyframes dis-sem-left {
+        0%{
+            transform: translate(0, 0);
+        }
+        80%{
+            transform: translate(30.5vw, 0);
+        }
+        85%{
+            transform: translate(32vw, -2.3vh);
+        }
+        95%{
+            transform: translate(34.8vw,-2.3vh);
+        }
+        100%{
+            transform: translate(35vw, -5vh);
+        }
+    }
+    @keyframes mid-left {
+        0%{
+            transform: translate(0, 0);
+        }
+        79%{
+            transform: translate(49vw, 0);
+        }
+        85%{
+            transform: translate(51vw, -3.3vh);
+        }
+        95%{
+            transform: translate(55.8vw, -3.3vh);
+        }
+        100%{
+            transform: translate(56vw, -7.5vh);
         }
     }
     @keyframes sem-bott-left {
@@ -274,5 +326,81 @@ span{
             transform: translate(-34.5vw, -2.5vh);
         }
     }
+    @keyframes sem-right {
+        0%{
+            transform: translate(0, 0);
+        }
+        100%{
+            transform: translate(-19.5vw, 0);
+        }
+    }
+    @keyframes sem-s-right {
+        0%{
+            transform: translate(0, 0);
+        }
+        100%{
+            transform: translate(-34vw, 0);
+        }
+    }
+    @keyframes sem-m-right {
+        0%{
+            transform: translate(0, 0);
+        }
+        50%{
+            transform: translate(-25vw, 0);
+        }
+        56%{
+            transform: translate(-25.5vw, 1.5vh);
+        }
+        65%{
+            transform: translate(-29vw, 1.5vh);
+        }
+        70%{
+            transform: translate(-30vw, 0);
+        }
+        75%{
+            transform: translate(-31.5vw, 0);
+        }
+        80%{
+            transform: translate(-32.5vw, -2.5vh);
+        }
+        100%{
+            transform: translate(-41vw, -2.5vh);
+        }
+    }
+    @keyframes sem-bott-right {
+        0%{
+            transform: translate(0, 0);
+        }
+        100%{
+            transform: translate(-19vw, 0);
+        }
+    }
+    @keyframes sem-s-bott-right {
+        0%{
+            transform: translate(0, 0);
+        }
+        100%{
+            transform: translate(-13vw, 0);
+        }
+    }
+    @keyframes bottom-right {
+        0%{
+            transform: translate(0, 0);
+        }
+        70%{
+            transform: translate(-48.5vw, 0);
+        }
+        78%{
+            transform: translate(-50.5vw, -3.4vh);
+        }
+        92%{
+            transform: translate(-55.55vw, -3.4vh);
+        }
+        100%{
+            transform: translate(-55.7vw, -7.7vh);
+        }
+    }
+
     
 }
