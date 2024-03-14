@@ -1,17 +1,22 @@
 .nav_slider{
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
 }
-.home{
+.nav_slider > div{
     width: 100%;
-    height: 50vh;
-    background-color: blueviolet;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+.home{
+    background-color: rgba(245, 245, 220, 0.507);
+    backdrop-filter: blur(0.5px);
 }
