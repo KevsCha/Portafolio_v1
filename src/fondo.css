@@ -1,17 +1,19 @@
-@import url('index.css');
+/* @import url('index.css'); */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 .background-animate{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    z-index: 0;
+    /* display: none; */
+    /* z-index: 0; */
     background-image: url('/Img/page2_backgroun_1600x900.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    position: relative;
+    position: fixed;
 }
 @media only screen and (max-width: 1600px) {
     
@@ -403,6 +405,6 @@ span{
             transform: translate(-55.7vw, -7.7vh);
         }
     }
-
+    
     
 }
