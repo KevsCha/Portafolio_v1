@@ -12,40 +12,29 @@ const btn_prev = document.querySelector('.prev');
 let index_nav = 0;
 
 function transition_slide(index){
-	//console.log(move);
-	slides[0].style.transform = `translate(${index * -100}%)`;
-	slides[1].style.transform = `translate(${index * -100}%)`;
-	slides[2].style.transform = `translate(${index * -100}%)`;
-	slides[3].style.transform = `translate(${index * -100}%)`;
-	slides[4].style.transform = `translate(${index * -100}%)`;
+	let i = 0;
 
-	if (index == 4 || index == -4)
-		index_nav = -1;
-	console.log(index);
+	while (i < slides.length)
+		slides[i++].style.transform = `translate(${index * -100}%)`;
 }
 
 btn_next.addEventListener('click', () => {
-		transition_slide(++index_nav);
+	console.log(index_nav);
+	if (index_nav == 4)
+		index_nav = -1;
+	transition_slide(++index_nav);
 });
 btn_prev.addEventListener('click', () => {
-	if (index_nav != 0)
-		transition_slide(--index_nav);
+	console.log(index_nav);
+	if (index_nav <= 0)
+		index_nav = 5;
+	transition_slide(--index_nav);
 });
 
+/*------------------------------------------------------- */
 
 let screen_width = window.innerWidth;
 let screen_height = window.innerHeight;
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 window.addEventListener('resize', () => {

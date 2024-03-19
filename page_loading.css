@@ -1,20 +1,5 @@
-@font-face {
-    font-family: 'lazy-tueday';
-    src: url('fonts/Lazy_Tuesday_Fon/Lazy\ Tuesday\ -\ Personal\ Use\ 400.otf') format(truetype);
-}
-@font-face {
-    font-family: 'retro-txt';
-    src: url('fonts/Retro_font/PressStart2P.ttf') format(truetype);
-}
-@font-face {
-    font-family: 'Playfair';
-    src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format(truetype);
-}
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import url('src/base.css');
+
 .container_background{
     width: 100%;
     height: 100vh;
