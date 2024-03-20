@@ -22,7 +22,7 @@
 @media only screen and (max-width: 1600px) {
     
 }
-span{
+.background-animate > span{
     display: inline-block;
     width: 5px;
     height: 5px;

@@ -19,11 +19,12 @@
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
+    transform: rotateX(50deg);
     position: absolute;
 }
 .gradient_txt{
     text-align: center;
-    background-image: linear-gradient(#FFFF8D, #F73963);
+    background-image: linear-gradient(var(--pageone-primary-txt), var(--pageone-second-txt));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1.5px;
@@ -43,7 +44,7 @@
     align-items: center; /* Centra vertical y horizontalmente el contenido */
 }
 .btn_behind{
-    box-shadow: #000000b6 0px 30px 40px, #7e0e5a 0px 35px 40px;
+    box-shadow: var(--pageone-shadow) 0px 30px 40px, var(--pageone-primary-back) 0px 35px 40px;
     text-align: center;
     padding: 45px 45px 45px 60px;
     transform: rotateX(50deg);

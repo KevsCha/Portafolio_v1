@@ -10,6 +10,26 @@
     font-family: 'Playfair';
     src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format(truetype);
 }
+/* *Paleta de colores */
+:root{
+    /* !page loading */
+    --pageone-primary-txt: #FFFB8C;
+    --pageone-second-txt: #F74766;
+    --pageone-primary-back: #750B53;
+    --pageone-second-back: #220B37;
+    --pageone-third-back: #240B63;
+    --pageone-shadow: #000000a9;
+    /* !page index   */
+    --index-primary-txt: ;
+    --index-second-txt: ;
+    --index-primary-back: ;
+    --index-second-back: ;
+    /* cards */
+    --color-cursus42-one: #04526D;
+    --color-cursus42-two: #021546;
+    
+}
+
 *{
     margin: 0;
     padding: 0;
