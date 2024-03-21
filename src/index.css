@@ -1,8 +1,8 @@
 @import url('base.css');
 
-
+/* !se cambio el main de 97 a 100 vh */
 main{
-    height: 95vh;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -65,6 +65,7 @@ main > .btn{
     font-size: 5em;
     color: rgba(165, 235, 251, 1);
 }
+/* ?---------------------CARD-HOME------------------------------- */
 /* !Ver esta parte y quitar el backdrop de abajo y z-index */
 ._home{
     /* background-color: rgba(255, 255, 255, 0.223); */
@@ -102,14 +103,19 @@ main > .btn{
     height: 100%;
     border-radius: 20px;
 }
+/* ?---------------------CARD-PROJECTS-------------------------- */
 ._projects{
     /* background-color: rgba(11, 104, 11, 0.507); */
     backdrop-filter: blur(0.5px);
 }
+._projects > h1{
+    transform: translateY(50%);
+    z-index: 1;
+}
 .projects_container{
     width: 95%;
     height: 100%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     /* background-color: blueviolet; */
     display: flex;
     flex-direction: row;
@@ -117,6 +123,25 @@ main > .btn{
 .projects_container > div{
     width: 50%;
     height: 100%;
+}
+.projects_info{
+    /* background-color: azure; */
+    display: flex;
+}
+.projects_info .background_window{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#04536d, #03060b);
+    /* backdrop-filter: blur(0.5px); */
+
+}
+.background_window img{
+    width: 100%;
+    height: 100%;
+    mask-image: linear-gradient(transparent, black 30%, transparent 90%);
 }
 .projects_card{
     /* background-color: azure; */
@@ -128,40 +153,59 @@ main > .btn{
 }
 .projects_card .card{
     width: 32.5%;
+    min-height: 350px;
     height: 50%;
     transform: translateY(-15%);
     /* background-color: black; */
     border-radius: 15px;
 }
 .campus_42{
-    padding: 30px 0;
     position: relative;
-    overflow: hidden;
+    background-image: linear-gradient(#04536d, #021546bc);
+}
+.campus_42 .img_back{
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    top: 50%;
+    transform: translate(0, -50%);
+    mask-image: linear-gradient(transparent, black 10% 80%, transparent);
+}
+.campus_42 .info{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
     background-image: linear-gradient(var(--color-cursus42-one), var(--color-cursus42-two));
+    border-radius: 15px;
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 .campus_42 .logo_42{
     width: 100%;
     height: auto;
 }
 .campus_42 .logo_pineapple_1{
+    max-width: 100px;
+    width: 100%;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 93%;
     left: 8%;
 }
 .campus_42 .logo_pineapple_2{
+    width: 75px;
     position: absolute;
     top: 65%;
     right: 3%;
     transform: rotateY(180deg) translate(-50%, -50%);
 }
-.campus_42 > h1{
+.campus_42 .info > h1{
     font-family: 'font-two-42';
-    margin-top: 3rem;
-    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-size: 1.5vw;
     font-style: italic;
     color: #01CCED;
 }
@@ -174,31 +218,40 @@ main > .btn{
 .campus_42 .color_title2{
     color: #EDC418;
 }
+/* .campus_42:hover{
+}
+.campus_42 .info:hover{
+    background-color: white;
+} */
 .list_buy{
     background-color: antiquewhite;
 }
 .crystal_bubble{
     background-color: antiquewhite;
 }
+/* ---------------------CARD ABOUT_ME-------------------------- */
 ._about_me{
     background-color: rgba(30, 79, 153, 0.507);
     backdrop-filter: blur(0.5px);
 }
+/* ---------------------CARD CONTACT--------------------------- */
 ._contact{
     background-color: rgba(115, 12, 110, 0.507);
     backdrop-filter: blur(0.5px);
 }
+/* ---------------------CARD CV-------------------------------- */
 ._cv{
     background-color: rgba(113, 8, 45, 0.507);
     backdrop-filter: blur(0.5px);
 }
+/* --------------------Menu Flotante de abojo------------------ */
 .bar_nav_float{
     width: 50%;
     max-height: 70px;
     height: 100%;
     position: fixed;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -20%);
     display: flex;
     justify-content: space-between;
 }
