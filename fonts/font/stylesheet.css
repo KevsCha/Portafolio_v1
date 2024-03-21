@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'CCResistanceIsLowered';
+    src: url('CCResistanceIsLowered-Regular.eot');
+    src: local('CCResistanceIsLowered Regular'), local('CCResistanceIsLowered-Regular'),
+        url('CCResistanceIsLowered-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CCResistanceIsLowered-Regular.woff2') format('woff2'),
+        url('CCResistanceIsLowered-Regular.woff') format('woff'),
+        url('CCResistanceIsLowered-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CCResistanceIsLowered';
+    src: url('CCResistanceIsLowered-BdIt.eot');
+    src: local('CCResistanceIsLowered Bold Italic'), local('CCResistanceIsLowered-BdIt'),
+        url('CCResistanceIsLowered-BdIt.eot?#iefix') format('embedded-opentype'),
+        url('CCResistanceIsLowered-BdIt.woff2') format('woff2'),
+        url('CCResistanceIsLowered-BdIt.woff') format('woff'),
+        url('CCResistanceIsLowered-BdIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CCResistanceIsLowered';
+    src: url('CCResistanceIsLowered-Italic.eot');
+    src: local('CCResistanceIsLowered Italic'), local('CCResistanceIsLowered-Italic'),
+        url('CCResistanceIsLowered-Italic.eot?#iefix') format('embedded-opentype'),
+        url('CCResistanceIsLowered-Italic.woff2') format('woff2'),
+        url('CCResistanceIsLowered-Italic.woff') format('woff'),
+        url('CCResistanceIsLowered-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CCResistanceIsLowered';
+    src: url('CCResistanceIsLowered-Bold.eot');
+    src: local('CCResistanceIsLowered Bold'), local('CCResistanceIsLowered-Bold'),
+        url('CCResistanceIsLowered-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CCResistanceIsLowered-Bold.woff2') format('woff2'),
+        url('CCResistanceIsLowered-Bold.woff') format('woff'),
+        url('CCResistanceIsLowered-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

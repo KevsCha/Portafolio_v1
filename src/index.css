@@ -124,21 +124,55 @@ main > .btn{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 25px;
 }
 .projects_card .card{
     width: 32.5%;
-    height: 40%;
+    height: 50%;
     transform: translateY(-15%);
     /* background-color: black; */
     border-radius: 15px;
 }
 .campus_42{
+    padding: 30px 0;
+    position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: linear-gradient(var(--color-cursus42-one), var(--color-cursus42-two));
 }
+.campus_42 .logo_42{
+    width: 100%;
+    height: auto;
+}
 .campus_42 .logo_pineapple_1{
-    transform: translate(0 , 100%);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 93%;
+    left: 8%;
+}
+.campus_42 .logo_pineapple_2{
+    position: absolute;
+    top: 65%;
+    right: 3%;
+    transform: rotateY(180deg) translate(-50%, -50%);
+}
+.campus_42 > h1{
+    font-family: 'font-two-42';
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #01CCED;
+}
+.campus_42 > h1 .font_txt{
+    font-family: 'font-42';
+}
+.campus_42 .color_title1{
+    color: white;
+}
+.campus_42 .color_title2{
+    color: #EDC418;
 }
 .list_buy{
     background-color: antiquewhite;
