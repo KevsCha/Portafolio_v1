@@ -72,6 +72,15 @@ color2 = #F73963
 <Ordenador portátil medio: 1366 x 768 px>
 <Ordenador de escritorio medio: 1440 x 900 px>
 <PC de escritorio grande: 1920 x 1080 px>
+
+<Móvil: 360 x 640>
+<Móvil: 375 x 667>
+<Móvil: 360 x 720>
+<iPhone X: 375 x 812>
+<Pixel 2: 411 x 731>
+<Tableta: 768 x 1024>
+<Un ordenador portátil: 1366 x 768>
+<Un ordenador portátil o desktop de alta resolución: 1920 x 1080>
 <------------------------------------------------------------->
 
 ## Fondo de pantalla>
