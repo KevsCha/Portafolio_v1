@@ -15,11 +15,11 @@
 }
 .title_welcome{
     width: 90%;
-    font-size: 4vw;;
-    top: 5%;
+    font-size: 4.5vw;;
+    top: 3.5%;
     left: 50%;
+    perspective: 1000px;
     transform: translateX(-50%);
-    transform: rotateX(50deg);
     position: absolute;
 }
 .gradient_txt{
@@ -30,6 +30,7 @@
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: black;
     font-family: 'retro-txt';
+    transform: rotateX(50deg)
 }
 .btn_start{
     position: absolute;
