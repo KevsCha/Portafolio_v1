@@ -99,4 +99,20 @@ color2 = #F73963
 
 # <--------------------------------Segunda paleta----------------------------------------------->
 
-# Pasos que hacer---photoshop
+<Proyectos
+  - Lista de compra (html, css, js)
+  - Foro (https://github.com/rauledutorres/Proyecto-2-Foros) (html, js, css, php)
+  - Gestor de fotos (laravel)
+  - Mini Red social (mysql, php,html, css, js, xampp)
+  - Crystal bubble (https://github.com/FerNandaRM05/Proy_final_Crystal_Bubble) (ionic, react,typescript)
+  - Hackaton (https://github.com/mflamanna/Watchapop) (react, css)
+  - Proyectos 42 (C) 
+    · Libft 
+    · GNL
+    · Printf
+    · So_long
+    . Bornt 2be root
+  -Ping-Pong (Unity)
+  -Game 2D (Unity)
+  -Dbz (Unity)
+>

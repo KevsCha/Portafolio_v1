@@ -127,6 +127,9 @@ main > .btn{
 .projects_info{
     /* background-color: azure; */
     display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
 }
 .projects_info .background_window{
     position: absolute;
@@ -136,12 +139,24 @@ main > .btn{
     left: 0;
     background-image: linear-gradient(#04536d, #03060b);
     /* backdrop-filter: blur(0.5px); */
-
+    
 }
 .background_window img{
     width: 100%;
     height: 100%;
+    /* z-index: -1; */
     mask-image: linear-gradient(transparent, black 30%, transparent 90%);
+}
+.box_info{
+    border-radius: 15px;
+    background-color: #ffffffaf;
+    width: 90%;
+    height: 70%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .projects_card{
     /* background-color: azure; */
