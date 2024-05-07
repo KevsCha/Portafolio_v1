@@ -31,7 +31,38 @@ btn_prev.addEventListener('click', () => {
 	transition_slide(--index_nav);
 });
 
-/*------------------------------------------------------- */
+/*-------------------mini slider(Projects)---------------------- */
+const container_cards = document.querySelector('.projects_card');
+let x = 0;
+const projects = document.querySelectorAll('.card');
+
+function transition_project(){
+	let card_clone = projects[x].cloneNode(true);
+	console.log(projects.length);
+	projects.forEach((card) => {
+		// let card_clone = card.cloneNode(true);
+		// console.log(card_clone);
+		card.style.transform = `translate(${x * -100}%)`;
+
+		// console.log(window.getComputedStyle(card).getPropertyValue('transform'));
+	});
+	projects[x].remove();
+	container_cards.appendChild(card_clone);
+	// container_cards.appendChild(card_clone);
+	if (x == projects.length)
+	{
+		console.log(projects[x - 1]);
+		x = -1;
+	}
+	console.log(x++);
+}
+// setInterval(transition_project, 2000);
+
+
+
+
+
+
 
 let screen_width = window.innerWidth;
 let screen_height = window.innerHeight;

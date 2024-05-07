@@ -137,9 +137,8 @@ main > .btn{
     height: 100vh;
     top: 0;
     left: 0;
-    background-image: linear-gradient(#04536d, #03060b);
+    /* background-image: linear-gradient(#04536d, #03060b); */
     /* backdrop-filter: blur(0.5px); */
-    
 }
 .background_window img{
     width: 100%;
@@ -157,6 +156,7 @@ main > .btn{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    white-space: normal;
 }
 .projects_card{
     /* background-color: azure; */
@@ -165,17 +165,21 @@ main > .btn{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    padding: 0 25px;
-    overflow-x: scroll;
+    /* padding: 0 25px; */
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
 }
 .projects_card .card{
     flex: 0 0 33%;
-    /* width: 32.5%; */
     min-height: 350px;
     height: 50%;
     transform: translateY(-15%);
-    /* background-color: black; */
     border-radius: 15px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* animation: slide 5s infinite linear; */
+    background-color: #04536d;
+    transition: transform 1s;
 }
 .campus_42{
     position: relative;
@@ -242,10 +246,22 @@ main > .btn{
     background-color: white;
 } */
 .list_buy{
-    background-color: antiquewhite;
+    background: url('../../img/card_buy2.png');
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 1.5rem;
+}
+.list_buy p, .list_buy span{
+    font-family: 'font-42';
+    text-align: center;
+    text-shadow: 1px 1px 2px #03060b;
+    color: #EDC418;
 }
 .crystal_bubble{
-    background-color: antiquewhite;
+    background: url('../../img/card_crystal2.png');
+    background-position: center;
+    
+    background-size: 100% 100%;
 }
 /* ---------------------CARD ABOUT_ME-------------------------- */
 ._about_me{
@@ -281,3 +297,4 @@ main > .btn{
     width: 100%;
     height: 100%;
 }
+/* keyframa de slider automatico */
