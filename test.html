@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contain{
+        position: relative;
+        width: 700px;
+        margin: 50px auto;
+        height: 250px;
+        /* background-color: black; */
+        /* perspective-origin: 50% 100%; */
+        border: solid 3px black;
+        perspective: 700px;
+    }
+    .contain > img{
+        position: absolute;
+        height: 100%;
+        width: 125px;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    img[alt="uno"]{
+        /* visibility: hidden; */
+        top: 50%;
+        left: 10%;
+        transform: rotateY(45deg) scale(1) translate(0%, -25%);
+        box-shadow: -10px 5px 15px 0px rgb(0 0 0 / 50%);
+        z-index: 1;
+    }
+    img[alt="dos"]{
+        top: 50%;
+        left: 19%;
+        transform: rotateY(45deg) translate(25%, -25%) scale(1.2);
+        box-shadow: -10px 5px 15px 0px rgb(0 0 0 / 50%);
+        z-index: 5;
+    }
+    img[alt="tres"]{
+        /* visibility: hidden; */
+        /* top: 50%;
+        left: 50%; */
+        inset: 50% 0% 0% 41%;
+        transform: scale(1.4) translate(0%, -25%);
+        z-index: 10;
+        box-shadow: 0px 20px 10px -10px rgb(0 0 0 / 50%);
+        /* visibility: hidden; */
+    }
+    img[alt="cuatro"]{
+        /* visibility: hidden; */
+        top: 50%;
+        right: 19%;
+        transform: rotateY(-45deg) translate(-25%, -25%) scale(1.2);
+        box-shadow: 10px 5px 15px 0px rgb(0 0 0 / 50%);
+        z-index: 5;
+    }
+    img[alt="cinco"]{
+        /* visibility: hidden; */
+        top: 50%;
+        right: 10%;
+        transform: rotateY(-45deg) translate(0%, -25%) scale(1);
+        box-shadow: 10px 5px 15px 0px rgb(0 0 0 / 50%);
+        z-index: 1;
+    }
+    .contain > img:hover{
+        /* visibility: visible; */
+        z-index: 15;
+        transform: scale(1.5);
+        border-radius: 15px;
+        /* inset: 25% 0% 0% 41%; */
+        /* width: 800px; */
+    }
+    .logo{
+        height: 300px;
+        width: 500px;
+        /* background-color: black; */
+        padding: 15px 10px;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center ;
+        position: relative;
+    }
+    .logo > img{
+        width: 70px;
+        height: 50px;
+        /* margin: 10px; */
+        object-fit: contain;
+        background-color: rgba(64, 224, 208, 0);
+        filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 50%)) grayscale(100%);
+        transition: all 0.5s linear;
+        margin-right: 10px;
+    }
+    .logo > img:hover{
+        filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 50%)) grayscale(0%);
+        z-index: 2;
+    }
+    .logo > img:hover + span{
+        top: 38%;
+        box-shadow: 0px 4px 11px 5px rgba(11, 47, 209, 1);
+    }
+    img[alt="img2"] + span{
+        left: 18%;
+        background-color: royalblue;
+        /* box-shadow: 0px -4px 10px 5px rgba(11, 47, 209, 1); */
+    }
+    .logo > span{
+        width: 70px;
+        height: 2px;
+        border-radius: 10px;
+        top: 60%;
+        background-color: rgb(233, 104, 29);
+        transition: all 0.5s ease-in-out;
+        position: absolute;
+        z-index: 1;
+    }
+
+</style>
+<body>
+    <div class="contain">
+        <img src="./img/Icons/desing_crystal3.png" alt="uno">
+        <img src="./img/Icons/desing_crystal2.png" alt="dos">
+        <img src="./img/Icons/desing_middle.png" alt="tres">
+        <img src="./img/Icons/desing_crystal4.png" alt="cuatro">
+        <img src="./img/Icons/desing_crytal.png" alt="cinco">
+    </div>
+    <div class="logo">
+
+        <img src="./img/logo/html.png" alt="">
+        <span></span>
+        <img src="./img/logo/css.png" alt="img2">
+        <span></span>
+        <img src="./img/logo/php.png" alt="php">
+        <img src="./img/logo/javascript.png" alt="">
+        <img src="./img/logo/phpmyadmin.png" alt="">
+    </div>
+</body>
+</html>

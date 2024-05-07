@@ -1,0 +1,417 @@
+@import url('../../src/styles/base.css');
+
+header{
+    font-family: 'lazy-tueday';
+    /* background-color: #000; */
+    color: #eee;
+    margin: auto;
+    font-size: 1.5rem;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+}
+nav{
+    padding: 0 100px;
+}
+a{
+    color: #e1e1e1;
+    text-decoration: none;
+    margin-right: 50px;
+    text-shadow: 0 2px 2px #000;
+    /* display: inline-block; */
+}
+li{
+    list-style: none;
+}
+/* ----------------------slider----------------------- */
+.slider{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    overflow: hidden;
+    position: relative;
+}
+.slider .cards_contain .card{
+    position: absolute;
+    inset: 0 0 0 0;
+    /* font-family: 'lazy-tues  day'; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.slider .cards_contain .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .cards_contain .card .cont{
+    width: 1140px;
+    max-width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-shadow: 0 5px 10px #000;
+    padding-right: 30%;
+}
+.card .cont h1{
+    letter-spacing: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.card .cont h1.topic{
+    color: orange;
+    /* letter-spacing: 10px; */
+}
+.card .cont .skills_logo{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.card .cont .skills_logo > div{
+    position: relative;
+}
+.card .cont .skills_logo > div span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.3s linear;
+    z-index: 1;
+}
+.card .cont .skills_logo img{
+    height: 50px;
+    position: relative;
+    object-fit: contain;
+    background-color: rgba(64, 224, 208, 0);
+    filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 50%)) grayscale(100%);
+    transition: all 0.5s linear;
+    margin-right: 10px;
+    z-index: 5;
+}
+/* -----------------logos-------------------- */
+.card .cont .skills_logo img:hover{
+    filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 50%)) grayscale(0%);
+    z-index: 5;
+}
+img[alt="html"] + span{
+    /* filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 50%)) grayscale(0%); */
+    background-color: #f16529;
+}
+img[alt="html"]:hover + span{
+    box-shadow: 0px 4px 11px 5px #f16529;
+}
+img[alt="css"] + span{
+    background-color: rgba(11, 47, 209, 1);
+}
+img[alt="css"]:hover + span{
+    box-shadow: 0px 4px 11px 5px rgba(11, 47, 209, 1);
+}
+img[alt="php"] + span{
+    background-color: rgb(97, 129, 182);
+}
+img[alt="php"]:hover + span{
+    box-shadow: 0px 4px 11px 5px rgb(97, 129, 182);
+}
+img[alt="git"] + span{
+    background-color: rgba(11, 47, 209, 1);
+}
+img[alt="git"]:hover + span{
+    box-shadow: 0px 4px 11px 5px rgba(11, 47, 209, 1);
+}
+img[alt="js"] + span{
+    background-color: rgb(245, 222, 25);
+}
+img[alt="js"]:hover + span{
+    box-shadow: 0px 4px 11px 5px rgb(245, 222, 25);
+}
+.card .cont .skills_logo img:hover + span{
+    bottom: 115%;
+    z-index: 1;
+}
+/* ------------------------------------------ */
+.card .btns{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+.card .btns button{
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.card .btns button:nth-child(2){
+    /* color: #eee; */
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #fff;
+}
+.card .btns button:nth-child(1):hover{
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.card .btns button:nth-child(2):hover{
+    background-color: #fff;
+    color: #333;
+}
+/* .red_social .cont h1::after{
+    content: 'Gram';
+    color: rgb(255, 115, 0);
+} */
+/*---------------- thumbnail ---------------------*/
+.thumbnail{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: flex;
+    gap: 20px;
+    z-index: 50;
+    width: max-content;
+    /* width: 43vw; */
+    overflow: hidden;
+}
+.thumbnail .item{
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+    color: #fff;
+}
+.thumbnail .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.thumbnail .item .info{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+}
+.thumbnail .item .info h3{
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 5px 5px #000000;
+}
+/* -----------------arrows----------------- */
+.arrows{
+    position: absolute;
+    bottom: 125px;
+    left: 13%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 100;
+    filter: blur(20px);
+    transform: translateY(50px);
+    opacity: 0;
+    animation: showcontent 0.5s 1.6s linear forwards;
+}
+.arrows button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-family: monospace;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.arrows button:hover{
+    background-color: #eee;
+    color: #555;
+}
+.slider .cards_contain .card:nth-child(1){
+    z-index: 3;
+}
+.slider .cards_contain .card:nth-child(1) h3,
+.slider .cards_contain .card:nth-child(1) h1,
+.slider .cards_contain .card:nth-child(1) p,
+.slider .cards_contain .card:nth-child(1) li,
+.slider .cards_contain .card:nth-child(1) .skills_logo,
+.slider .cards_contain .card:nth-child(1) .btns{
+    /* opacity: 0; */
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showcontent 0.5s 1s linear forwards;
+}
+.slider .cards_contain .card:nth-child(1) h3{
+    animation-delay: .8s;
+}
+.slider .cards_contain .card:nth-child(1) h1{
+    animation-delay: 1s;
+}
+.slider .cards_contain .card:nth-child(1) p{
+    animation-delay: 1.2s;
+}
+.slider .cards_contain .card:nth-child(1) li{
+    animation-delay: 1.2s;
+}
+.slider .cards_contain .card:nth-child(1) .skills_logo{
+    animation-delay: 1.4s;
+}
+.slider .cards_contain .card:nth-child(1) .btns{
+    animation-delay: 1.6s;
+}
+/* ------------------ animacion de las letras ---------------- */
+@keyframes showcontent{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0px);
+    }
+}
+/* ----------- efecto NEXT ---------- */
+.slider.next .cards_contain .card:nth-child(1) img{
+    /* animation: next 1s linear forwards; */
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 15px;
+    animation: showimage .5s linear 1 forwards;
+}
+@keyframes showimage{
+    to{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+.slider.next .thumbnail .item:nth-last-child(1){
+    width: 0;
+    overflow: hidden;
+    animation: showthumbnail 0.5s linear 1 forwards;
+}
+@keyframes showthumbnail{
+    to{
+        width: 150px;
+    }
+}
+.slider.next .thumbnail{
+    transform: translateX(150px);
+    animation: tranformthumbnail 0.5s linear 1 forwards;
+}
+@keyframes tranformthumbnail{
+    to{
+        transform: translateX(0);
+    }
+}
+/* ------------- efecto PREV ------------ */
+.slider.prev .cards_contain .card:nth-child(2){
+    z-index: 4;
+}
+.slider.prev .cards_contain .card:nth-child(2) img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: outimage .5s linear 1 forwards;
+}
+@keyframes outimage{
+    to{
+        width: 150px;
+        height: 220px;
+        left: 50%;
+        bottom: 50px;
+        border-radius: 15px;
+    }
+}
+.slider.prev .thumbnail .item:nth-child(1){
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: showthumbnail 0.5s linear 1 forwards;
+}
+.slider.prev .cards_contain .card:nth-child(2) h3,
+.slider.prev .cards_contain .card:nth-child(2) h1,
+.slider.prev .cards_contain .card:nth-child(2) p,
+.slider.prev .cards_contain .card:nth-child(2) li,
+.slider.prev .cards_contain .card:nth-child(2) .skills_logo,
+.slider.prev .cards_contain .card:nth-child(2) .btns{
+    animation: contentout 1.5s linear 1 forwards;
+}
+@keyframes contentout{
+    to{
+        opacity: 0;
+        transform: translateY(-150px);
+        filter: blur(20px);
+    }
+}
+.slider.next .arrows button,
+.slider.prev .arrows button{
+    /* pointer-events: none; */
+}
+/*---------------- loading card -------------------*/
+.loading{
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f1683a;
+    z-index: 100;
+}
+.slider.next .loading,
+.slider.prev .loading{
+    width: 100%;
+    animation: loadingtime 1s linear 1 forwards;
+}
+@keyframes loadingtime{
+    to{
+        width: 0;
+    }
+}
+@media only screen and (width < 678px){
+    header{
+        padding: 0 20px;
+        font-size: 1rem;
+    }
+    nav{
+        padding: 0 20px;
+    }
+    a{
+        margin-right: 20px;
+    
+    }
+    .card .btns{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .card .btns button{
+        padding: 10px;
+    }
+    .arrows{
+        bottom: 75px;
+    }
+    .slider .cards_contain .card .cont{
+        padding-right: 0;
+        top: 10%;
+    }
+    .slider .cards_contain .card .cont h1{
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    
+}
