@@ -1,28 +1,60 @@
 @import url('../../src/styles/base.css');
 
 header{
+    width: 100%;
+    height: 60px;
     font-family: 'lazy-tueday';
-    /* background-color: #000; */
     color: #eee;
     margin: auto;
     font-size: 1.5rem;
-    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     position: fixed;
+    box-shadow: 0 5px 5px rgba(75, 75, 75, 0.5);
+    backdrop-filter: blur(10px);
     z-index: 100;
 }
 nav{
     padding: 0 100px;
 }
 a{
+    min-width: 100px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
     color: #e1e1e1;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 5px;
     text-shadow: 0 2px 2px #000;
+    display: inline-block;
+    text-align: center;
+    /* background-color: rgb(255, 165, 0,0.5); */
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: background-color 0.3s;
     /* display: inline-block; */
+}
+nav a span{
+    /* display: block; */
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0%;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s;
+}
+nav a:hover{
+    background-color: rgb(255, 165, 0,0.5);
+    color: #ffffff;
+    text-shadow: 0 2px 2px #000, 0 0 5px #fff;
+}
+nav a:hover span{
+    width: 100%;
+    left: 0;
 }
 li{
     list-style: none;
@@ -32,7 +64,7 @@ li{
     width: 100%;
     height: 100vh;
     background-color: antiquewhite;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 }
 .slider .cards_contain .card{
@@ -41,10 +73,11 @@ li{
     /* font-family: 'lazy-tues  day'; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.slider .cards_contain .card img{
+.slider .cards_contain .card >  img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter:brightness(0.5);
 }
 .slider .cards_contain .card .cont{
     width: 1140px;
@@ -280,7 +313,7 @@ img[alt="js"]:hover + span{
     }
 }
 /* ----------- efecto NEXT ---------- */
-.slider.next .cards_contain .card:nth-child(1) img{
+.slider.next .cards_contain .card:nth-child(1) > img{
     /* animation: next 1s linear forwards; */
     width: 150px;
     height: 220px;
@@ -322,7 +355,7 @@ img[alt="js"]:hover + span{
 .slider.prev .cards_contain .card:nth-child(2){
     z-index: 4;
 }
-.slider.prev .cards_contain .card:nth-child(2) img{
+.slider.prev .cards_contain .card:nth-child(2) > img{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -334,14 +367,16 @@ img[alt="js"]:hover + span{
         height: 220px;
         left: 50%;
         bottom: 50px;
-        border-radius: 15px;
+        border-radius: 10px;
     }
 }
 .slider.prev .thumbnail .item:nth-child(1){
     width: 0;
     overflow: hidden;
     opacity: 0;
-    animation: showthumbnail 0.5s linear 1 forwards;
+    animation: showthumbnail 0.5s linear 1 forwards; 
+    /* 
+    */
 }
 .slider.prev .cards_contain .card:nth-child(2) h3,
 .slider.prev .cards_contain .card:nth-child(2) h1,
@@ -382,36 +417,80 @@ img[alt="js"]:hover + span{
         width: 0;
     }
 }
-@media only screen and (width < 678px){
-    header{
-        padding: 0 20px;
-        font-size: 1rem;
-    }
-    nav{
-        padding: 0 20px;
-    }
-    a{
-        margin-right: 20px;
-    
-    }
-    .card .btns{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-    .card .btns button{
-        padding: 10px;
-    }
-    .arrows{
-        bottom: 75px;
-    }
-    .slider .cards_contain .card .cont{
-        padding-right: 0;
-        top: 10%;
-    }
-    .slider .cards_contain .card .cont h1{
-        font-size: 30px;
-        letter-spacing: 3px;
-    }
-    
+
+/* -----img contain -----*/
+.slider .card .box_mockup{
+    display: none;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0%;
+}
+.slider .card .contain{
+    position: absolute;
+    width: 700px;
+    margin: 50px auto;
+    height: 250px;
+    transform: translateX(-100%);
+    /* background-color: black; */
+    /* perspective-origin: 50% 100%; */
+    /* border: solid 3px black; */
+    perspective: 700px;
+}
+.slider .card .box_mockup  img{
+    /* display: none; */
+    position: absolute;
+    height: 100%;
+    width: 125px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.slider .card .box_mockup img[alt="uno"]{
+    /* visibility: hidden; */
+    top: 50%;
+    left: 10%;
+    transform: rotateY(45deg) scale(1) translate(0%, -25%);
+    box-shadow: -10px 5px 15px 0px rgb(0 0 0 / 50%);
+    z-index: 1;
+}
+.slider .card .box_mockup img[alt="dos"]{
+    top: 50%;
+    left: 19%;
+    transform: rotateY(45deg) translate(25%, -25%) scale(1.2);
+    box-shadow: -10px 5px 15px 0px rgb(0 0 0 / 50%);
+    z-index: 5;
+}
+.slider .card .box_mockup img[alt="tres"]{
+    /* visibility: hidden; */
+    /* top: 50%;
+    left: 50%; */
+    inset: 50% 0% 0% 41%;
+    transform: scale(1.4) translate(0%, -25%);
+    z-index: 10;
+    box-shadow: 0px 20px 10px -10px rgb(0 0 0 / 50%);
+    /* visibility: hidden; */
+}
+.slider .card .box_mockup img[alt="cuatro"]{
+    /* visibility: hidden; */
+    top: 50%;
+    right: 19%;
+    transform: rotateY(-45deg) translate(-25%, -25%) scale(1.2);
+    box-shadow: 10px 5px 15px 0px rgb(0 0 0 / 50%);
+    z-index: 5;
+}
+.slider .card .box_mockup img[alt="cinco"]{
+    /* visibility: hidden; */
+    top: 50%;
+    right: 10%;
+    transform: rotateY(-45deg) translate(0%, -25%) scale(1);
+    box-shadow: 10px 5px 15px 0px rgb(0 0 0 / 50%);
+    z-index: 1;
+}
+.slider .cards_contain .box_mockup .contain > img:hover{
+    /* visibility: visible; */
+    z-index: 15;
+    transform: scale(1.2);
+    border-radius: 15px;
+    /* inset: 25% 0% 0% 41%; */
+    /* width: 800px; */
 }
