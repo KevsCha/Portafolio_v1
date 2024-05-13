@@ -16,6 +16,29 @@ header{
     backdrop-filter: blur(10px);
     z-index: 100;
 }
+header .hamburguer{
+    position: absolute;
+    display: none;
+    right: 50px;
+}
+/*------------------- Menu Hamburguesa ---------------------*/
+.hamburguer ._layer{
+    width: 30px;
+    height: 3px;
+    background-color: #eee;
+    border-radius: 25px;
+    transition: all 0.5s;
+    position: absolute;
+}
+.hamburguer ._top{
+    top: 7px;
+}
+.hamburguer ._mid{
+}
+.hamburguer ._bot{
+    top: -7px;
+}
+
 nav{
     padding: 0 100px;
 }
@@ -31,7 +54,7 @@ a{
     display: inline-block;
     text-align: center;
     /* background-color: rgb(255, 165, 0,0.5); */
-    border-radius: 5px;
+    border-radius: 25px 0px;
     padding: 0 15px;
     transition: background-color 0.3s;
     /* display: inline-block; */
@@ -238,6 +261,9 @@ img[alt="js"]:hover + span{
     letter-spacing: 2px;
     text-shadow: 0 5px 5px #000000;
 }
+/* .thumbnail.is_activate{
+    visibility: hidden;
+} */
 /* -----------------arrows----------------- */
 .arrows{
     position: absolute;
@@ -419,7 +445,7 @@ img[alt="js"]:hover + span{
 }
 
 /* -----img contain -----*/
-.slider .card .box_mockup{
+/* .slider .card .box_mockup{
     display: none;
     position: absolute;
     z-index: 4;
@@ -432,13 +458,9 @@ img[alt="js"]:hover + span{
     margin: 50px auto;
     height: 250px;
     transform: translateX(-100%);
-    /* background-color: black; */
-    /* perspective-origin: 50% 100%; */
-    /* border: solid 3px black; */
     perspective: 700px;
 }
 .slider .card .box_mockup  img{
-    /* display: none; */
     position: absolute;
     height: 100%;
     width: 125px;
@@ -446,7 +468,6 @@ img[alt="js"]:hover + span{
     cursor: pointer;
 }
 .slider .card .box_mockup img[alt="uno"]{
-    /* visibility: hidden; */
     top: 50%;
     left: 10%;
     transform: rotateY(45deg) scale(1) translate(0%, -25%);
@@ -461,17 +482,12 @@ img[alt="js"]:hover + span{
     z-index: 5;
 }
 .slider .card .box_mockup img[alt="tres"]{
-    /* visibility: hidden; */
-    /* top: 50%;
-    left: 50%; */
     inset: 50% 0% 0% 41%;
     transform: scale(1.4) translate(0%, -25%);
     z-index: 10;
     box-shadow: 0px 20px 10px -10px rgb(0 0 0 / 50%);
-    /* visibility: hidden; */
 }
 .slider .card .box_mockup img[alt="cuatro"]{
-    /* visibility: hidden; */
     top: 50%;
     right: 19%;
     transform: rotateY(-45deg) translate(-25%, -25%) scale(1.2);
@@ -479,7 +495,6 @@ img[alt="js"]:hover + span{
     z-index: 5;
 }
 .slider .card .box_mockup img[alt="cinco"]{
-    /* visibility: hidden; */
     top: 50%;
     right: 10%;
     transform: rotateY(-45deg) translate(0%, -25%) scale(1);
@@ -487,10 +502,7 @@ img[alt="js"]:hover + span{
     z-index: 1;
 }
 .slider .cards_contain .box_mockup .contain > img:hover{
-    /* visibility: visible; */
     z-index: 15;
     transform: scale(1.2);
     border-radius: 15px;
-    /* inset: 25% 0% 0% 41%; */
-    /* width: 800px; */
-}
+} */
