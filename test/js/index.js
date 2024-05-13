@@ -33,3 +33,11 @@ function show_slider(type){
     }, timing);
     console.log(item_slider, item_thumbnail);
 }
+/*-------------- menu Hamburguesa ------------- */
+const menu_hamburguer = document.querySelector('.hamburguer');
+const menu_nav = document.getElementById('nav_menu');
+menu_hamburguer.onclick = () => {
+    menu_hamburguer.classList.toggle('is_activate');
+    // document.querySelector('.menu').classList.toggle('is_activate');
+    menu_nav.classList.toggle('is_activate');
+};
