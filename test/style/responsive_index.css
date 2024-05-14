@@ -35,7 +35,7 @@
     *hacer un menu hamburguesa
     *ver el apartado de projectos de 42madrid
 */
-@media only screen and (width <= 375px){
+@media only screen and (width <= 376px){
     header{
         padding: 0 20px;
         font-size: 1rem;
