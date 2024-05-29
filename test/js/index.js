@@ -1,3 +1,4 @@
+/*------------------------Slider-------------------- */
 const next_btn = document.getElementById('next');
 const prev_btn = document.getElementById('prev');
 const slider = document.querySelector('.slider');
@@ -41,3 +42,36 @@ menu_hamburguer.onclick = () => {
     // document.querySelector('.menu').classList.toggle('is_activate');
     menu_nav.classList.toggle('is_activate');
 };
+/*------------------- select_menu----------------- */
+let btn_select = Array.from(menu_nav.children);
+btn_select.forEach((btn) => {
+    btn.onclick = () => {
+        btn_select.forEach((btn) => {
+            btn.classList.remove('active');
+        });
+        btn.classList.add('active');
+    };
+});
+console.log(btn_select);
+/*------------------ Nombre se autocompleta ------------- */
+const info_us = document.querySelector('.info_us');
+const user_data = Array.from(info_us.children);
+
+let name_porfolio = 'Kevin David Quispe';
+
+// if(name[1])
+
+let i = 0;
+console.log(name_porfolio);
+    // auto_complete();
+    
+function auto_complete(i) {
+    let temp = document.querySelector('.info_us');
+    // temp.children[1].innerHTML += name_porfolio[i];
+    console.log(temp.children[i);
+    if (temp){
+        
+    }
+    setInterval(auto_complete, 1000);
+}
+auto_complete(i);

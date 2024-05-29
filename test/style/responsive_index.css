@@ -1,14 +1,38 @@
+@media only screen and (width <= 1024px) {
+    nav{
+        padding: 0 45px;
+    }
+    .home section .info_us{
+        width: 80%;
+    }
+    .home .bg_black{
+        background-size: cover;
+    }
+    .home .contact a{
+        height: 35px;
+        font-size: .8rem;
+    }
+}
 @media only screen and (width < 678px){
     header{
-        padding: 0 20px;
+        padding: 0 10px;
         font-size: 1rem;
     }
     nav{
-        padding: 0 20px;
+        padding: 0 0px;
     }
     a{
-        /* margin-right: 20px; */
-    
+        min-width: 80px;
+        padding: 0 10px;
+    }
+    .home section .info_us > h1{
+        font-size: 2.5rem;   
+    }
+    .home section .info_us > h3{
+        font-size: 1.5rem;
+    }
+    .home section .info_us > p{
+        font-size: 1rem;
     }
     .card .btns{
         display: flex;
@@ -35,7 +59,7 @@
     *hacer un menu hamburguesa
     *ver el apartado de projectos de 42madrid
 */
-@media only screen and (width <= 376px){
+@media only screen and (width <= 525px){
     header{
         padding: 0 20px;
         font-size: 1rem;
@@ -46,7 +70,29 @@
         display: block;
         z-index: 10;
     }
-
+    .home section .info_us{
+        width: 100%;
+        text-align: center;
+    }
+    .home section .info_us > h1{
+        font-size: 2rem;   
+    }
+    .home section .info_us > h3{
+        font-size: 1rem;
+    }
+    .home section .info_us > p{
+        font-size: .8rem;
+    }
+    .home .contact{
+        display: flex;
+        /* flex-direction: colu; */
+        justify-content: center;
+        align-items: center;
+    }
+    .home .contact a{
+        height: 30px;
+        font-size: .6rem;
+    }
     .hamburguer.is_activate ._top{
         position: absolute;
         top: 50%;
