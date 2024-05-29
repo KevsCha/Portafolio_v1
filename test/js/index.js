@@ -68,10 +68,10 @@ console.log(name_porfolio);
 function auto_complete(i) {
     let temp = document.querySelector('.info_us');
     // temp.children[1].innerHTML += name_porfolio[i];
-    console.log(temp.children[i);
-    if (temp){
+    // console.log(temp.children[i);
+    // if (temp){
         
-    }
+    // }
     setInterval(auto_complete, 1000);
 }
 auto_complete(i);
