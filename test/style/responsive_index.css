@@ -8,7 +8,7 @@
     .home .bg_black{
         background-size: cover;
     }
-    .home .contact a{
+    .home .contact a,.contact_me .contact_data a{
         height: 35px;
         font-size: .8rem;
     }
