@@ -25,6 +25,9 @@ header .hamburguer{
     width: 30px;
     height: 30px;
 }
+main{
+    background-color: #333;
+}
 /*------------------- Menu Hamburguesa ---------------------*/
 .hamburguer ._layer{
     width: 30px;
@@ -554,6 +557,7 @@ img[alt="js"]:hover + span{
     height: inherit;
     /* top: -20%; */
     position: absolute;
+    /* url_file */
     background-image: url('../../img/setup2.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -721,17 +725,21 @@ img[alt="js"]:hover + span{
 .about_me .contain_about .info_about{
     position: relative;
 }
-.about_me .contain_about .info_about span{
+.about_me .contain_about .info_about span,
+.about_me .education_about .box_edu > span,
+.contact_me .contain_cont > span{
     position: absolute;
     font-size: 140px;
     letter-spacing: 10px;
     font-weight: bold;
     z-index: 1;
+    color: #656565;
+    transition: all 0.3s linear;
+}
+.about_me .contain_about .info_about span{
     top: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #656565;
-    transition: all 0.3s linear;
 }
 .about_me .contain_about .info_about > div{
     position: relative;
@@ -766,16 +774,9 @@ img[alt="js"]:hover + span{
     /* position: relative; */
 }
 .about_me .education_about .box_edu > span{
-    position: absolute;
-    font-size: 140px;
-    letter-spacing: 10px;
-    font-weight: bold;
-    z-index: 1;
     top: 0;
     left: 0;
     /* transform: translate(-50%, -50%); */
-    color: #656565;
-    transition: all 0.3s linear;
     transform: translateX(-14px);
 }
 .box_edu .item_about{
@@ -808,8 +809,12 @@ img[alt="js"]:hover + span{
     /* margin-left: 20px; */
 }
 .about_me .education_about .top_data span,
-.about_me .education_about .item_about p{
+.about_me .education_about .item_about p,
+.contact_me .contact_data p{
+    color: #fff;
     font-size: 1.2rem;
+    position: relative;
+    z-index: 10;
     margin: 0;
     max-width: none;
 }
@@ -828,4 +833,94 @@ img[alt="js"]:hover + span{
     height: 15px;
     border-radius: 50%;
     background-color: #fff;
+}
+/* -------------------Contact------------------ */
+.contact_me{
+    padding: 70px 0 120px 0;
+    background-color: #333;
+}
+.contact_me .contain_cont{
+    position: relative;
+    width: 1140px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+.contact_me .contain_cont > span{
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact_me .contact_data{
+    /* position: relative; */
+    width: 40%;
+}
+.contact_me .contact_form{
+    width: 55%;
+    min-height: 500px;
+    background-image: url('../../img/pexels-programming.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact_me .contact_form form{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15%;
+}
+.contact_me .contact_form .form_field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    color: #fff;
+    position: relative;
+}
+.contact_me .form_field input,
+.contact_me .form_field textarea{
+    border: none;
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ffffff48;
+    outline: none;
+}
+.contact_me .form_field textarea{
+    min-height: 150px;
+}
+.contact_me .form_field label{
+    font-size: 1.2rem;
+    color: #878787;
+    position: absolute;
+    top: 50%;
+    transform: translate(5px, -50%);
+    transition: 0.3s linear;
+}
+.contact_me .form_field textarea + label{
+    top: 5px;
+    transform: translate(5px, 0);
+}
+.contact_me .form_field input:focus + label,
+.contact_me .form_field input.field + label{
+    color: #f16529;
+    top: -75%;
+    font-size: 1rem;
+    transform: translate(5px, 0);
+}
+.contact_me .form_field textarea:focus + label,
+.contact_me .form_field textarea.field + label{
+    color: #f16529;
+    top: -25px;
+    font-size: 1rem;
+    transform: translate(5px, 0);
 }

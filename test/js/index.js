@@ -53,6 +53,18 @@ btn_select.forEach((btn) => {
     };
 });
 console.log(btn_select);
+/*-------------------add class to input, modified label------- */
+const inputs = document.querySelectorAll('[name*="field"]');
+//Este forEach recorre todos los inputs
+inputs.forEach((input) => {
+    input.addEventListener('input', () => {
+        console.log(input.value);
+        if(input.value != '')
+            input.classList.add('field');
+        else 
+            input.classList.remove('field');
+    });
+});
 /*------------------ Nombre se autocompleta ------------- */
 const info_us = document.querySelector('.info_us');
 const user_data = Array.from(info_us.children);
