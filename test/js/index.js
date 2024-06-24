@@ -45,14 +45,37 @@ menu_hamburguer.onclick = () => {
 /*------------------- select_menu----------------- */
 let btn_select = Array.from(menu_nav.children);
 btn_select.forEach((btn) => {
-    btn.onclick = () => {
+    btn.addEventListener('click', () => {
         btn_select.forEach((btn) => {
             btn.classList.remove('active');
         });
         btn.classList.add('active');
-    };
+    });
 });
 console.log(btn_select);
+/*-------------------scroll----------------- */
+document.addEventListener('DOMContentLoaded', () =>{
+    const sections = document.querySelectorAll('[name*="section"]');
+    const cpy_nav = [...btn_select];
+
+    
+    window.addEventListener('scroll', () => {
+        let scroll = window.scrollY;
+        console.log(scroll);
+        sections.forEach((section, i) => {
+            console.log('posicion de cada section____' + section.offsetTop + '____' + section.className);
+            if(scroll >= section.offsetTop - 300){
+                console.log();
+                cpy_nav.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+                cpy_nav[i].classList.add('active');
+            }
+        });
+    });
+    console.log(cpy_nav, sections);
+});
+
 /*-------------------add class to input, modified label------- */
 const inputs = document.querySelectorAll('[name*="field"]');
 //Este forEach recorre todos los inputs

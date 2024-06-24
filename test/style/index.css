@@ -711,8 +711,10 @@ img[alt="js"]:hover + span{
     width: 1140px;
     max-width: 80%;
     margin: 0 auto;
+    gap: 20px;
     display: flex;
     justify-content: space-around;
+    justify-content: center;
 }
 .about_me .contain_about .img_about{
     max-width: 450px;

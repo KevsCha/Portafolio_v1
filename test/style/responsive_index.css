@@ -12,6 +12,15 @@
         height: 35px;
         font-size: .8rem;
     }
+    /*-------------------About_me--------------------*/
+    .about_me .contain_about .img_about{
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .about_me .contain_about .info_about span{
+        font-size: 100px;
+    }
+
 }
 @media only screen and (width < 678px){
     header{
@@ -129,7 +138,7 @@
         text-align: start;
         /* margin-right: 20px; */
     }
-/*     
+    /*     
     .thumbnail {
         left: 70%;
         bottom: 20px;
