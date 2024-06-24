@@ -578,7 +578,6 @@ img[alt="js"]:hover + span{
     justify-content: center;
     align-items: center;
     animation: opacity .5s linear forwards;
-
 }
 /* .home section::before{
     content: '';
@@ -864,10 +863,15 @@ img[alt="js"]:hover + span{
     /* position: relative; */
     width: 40%;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .contact_me .contact_data a{
     min-width: 100px;
     line-height: normal;
+    filter: blur(20px);
+    animation: opacity .5s 1s linear forwards;
 }
 
 .contact_me .contact_data .contact_social .contact{
@@ -923,6 +927,7 @@ img[alt="js"]:hover + span{
     top: 50%;
     transform: translate(5px, -50%);
     font-family: 'lazy-tueday';
+    user-select: none;
     transition: 0.3s linear;
 }
 .contact_me .form_field textarea + label{
@@ -954,6 +959,7 @@ img[alt="js"]:hover + span{
     padding: 0 15px;
     background-color: rgb(255, 165, 0, 0.5);
     text-shadow: 0 2px 2px #000, 0 0 5px #fff;
+    border: none;
     transition: background-color 0.3s;
 }
 .contact_me .form_field button:hover{
