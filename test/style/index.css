@@ -65,6 +65,7 @@ a{
     border-radius: 25px 0px;
     padding: 0 15px;
     transition: background-color 0.3s;
+    cursor: pointer;
     /* display: inline-block; */
 }
 nav a span{
@@ -117,7 +118,7 @@ li{
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    filter:brightness(0.5);
+    filter:brightness(0.5) blur(2px);
 }
 .slider .cards_contain .card .cont{
     width: 1140px;
@@ -271,6 +272,7 @@ img[alt="js"]:hover + span{
     width: max-content;
     /* width: 43vw; */
     overflow: hidden;
+    user-select: none;
 }
 .thumbnail .item{
     width: 150px;
@@ -284,6 +286,7 @@ img[alt="js"]:hover + span{
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    filter: brightness(.6);
 }
 .thumbnail .item .info{
     position: absolute;
@@ -294,7 +297,9 @@ img[alt="js"]:hover + span{
 .thumbnail .item .info h3{
     font-weight: bold;
     letter-spacing: 2px;
-    text-shadow: 0 5px 5px #000000;
+    color: orange;
+
+    text-shadow: 0 0px 10px #000000;
 }
 /* .thumbnail.is_activate{
     visibility: hidden;
@@ -710,9 +715,9 @@ img[alt="js"]:hover + span{
     width: 1140px;
     max-width: 80%;
     margin: 0 auto;
-    gap: 20px;
+    gap: 30px;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
     justify-content: center;
 }
 .about_me .contain_about .img_about{
@@ -758,7 +763,8 @@ img[alt="js"]:hover + span{
     margin-bottom: 40px;
 }
 .about_me .info_about p,
-.about_me .education_about .item_about p{
+.about_me .education_about .item_about p,
+.contact_me .contact_data p{
     max-width: 40ch;
     font-size: 1.2rem;
     color: #fff;
@@ -813,13 +819,12 @@ img[alt="js"]:hover + span{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    gap: 15px;
     /* margin-left: 20px; */
 }
 .about_me .education_about .top_data span,
 .about_me .education_about .item_about p,
 .contact_me .contact_data p{
-    color: #fff;
-    font-size: 1.2rem;
     position: relative;
     z-index: 10;
     margin: 0;
@@ -907,6 +912,9 @@ img[alt="js"]:hover + span{
     color: #fff;
     position: relative;
 }
+.contact_me .contact_form .form_field:last-child{
+    margin-bottom: 0;
+}
 .contact_me .form_field input,
 .contact_me .form_field textarea{
     border: none;
@@ -950,7 +958,7 @@ img[alt="js"]:hover + span{
     font-size: 1rem;
     transform: translate(5px, 0);
 }
-.contact_me .form_field button{
+.contact_me .form_field input[type="submit"]{
     max-width: 120px;
     height: 40px;
     line-height: 30px;
@@ -964,8 +972,37 @@ img[alt="js"]:hover + span{
     border: none;
     transition: background-color 0.3s;
 }
-.contact_me .form_field button:hover{
+.contact_me .form_field input[type="submit"]:hover{
     background-color: rgb(255, 165, 0, 1);
     color: #fff;
     text-shadow: 0 2px 2px #000, 0 0 5px #fff;
+}
+/* -------------------popUp_message------------------ */
+.popup_message{
+    position: fixed;
+    bottom: 2%;
+    left: -200px;
+    font-family: 'lazy-tueday';
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: rgb(255, 166, 0, .5);
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    z-index: 1000;
+}
+.popup_message.activate{
+    animation: showmessage .3s linear forwards;   
+    transition: all 0.3s linear;
+
+}
+@keyframes showmessage {
+    to{
+        left: 15px;
+        bottom: 2%;
+    }
+    
 }

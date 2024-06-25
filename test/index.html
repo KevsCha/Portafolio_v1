@@ -20,7 +20,7 @@
 			<a id="nav_projects" href="#projects">Projects <span></span></a>
 			<a id="nav_about" href="#about">About me <span></span></a>
 			<a id="nav_contact" href="#contact">Contact <span></span></a>
-			<a id="nav_cv" href="#">CV <span></span></a>
+			<a id="nav_cv" href="../src/Docs/Web Developer Kevin.pdf" download="CV Kevin_Quispe Web Developer.pdf">CV <span></span></a>
 		</nav>
 	</header>
 	<main>
@@ -39,7 +39,7 @@
 					<div class="contact">
 						<a href="https://www.linkedin.com/in/kevin-quispe/" target="_blank" ><img src="../Img/Icons/brand-linkedin (1).png" alt="Linkedin">Linkedin</a>
 						<a href="https://github.com/KevsCha" target="_blank"><img src="../Img/Icons/brand-github (2).png" alt="Git-hub">Github</a>
-						<a href=""><img src="../Img/Icons/mail (2).png" alt="Email"><span>k-e-v-i-n_13_@hotmail.com</span></a>
+						<a id="url_email" onclick="copy_clipboard()" href="#"><img src="../Img/Icons/mail (2).png" alt="Email"><span>k-e-v-i-n_13_@hotmail.com</span></a>
 					</div>
 				</div>
 			</section>
@@ -53,15 +53,9 @@
 					<img src="../img/42mad.jpg" alt="42_madrid">
 					<div class="cont">
 						<h3>Kevs_Cha</h3>
-						<h1>Proyectos 42 Madrid</h1>
-						<h2 class="topic">Desarrollo de software</h2>
-						<!-- <ul>
-							<li>Libft</li>
-							<li>Get Next Line</li>
-							<li>So_Long</li>
-							<li>Born2beroot</li>
-						</ul> -->
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem itaque pariatur, repudiandae consequuntur impedit consequatur totam sint iusto. Molestias aperiam error rerum, impedit reprehenderit hic amet fugiat quam expedita mollitia.</p>
+						<h1>Projects 42 Madrid</h1>
+						<h2 class="topic">Software development</h2>
+						<p>This section features the ongoing projects I am developing at 42 Madrid, a renowned coding school known for its innovative, peer-to-peer learning environment. Here, you will find a showcase of my work in front-end and back-end development, problem-solving, and collaboration. Click "See More" to explore these projects in detail.</p>
 						<div class="skills_logo"></div>
 						<div class="btns">
 							<button><a href="" target="_blank">SEE MORE</a></button>
@@ -74,7 +68,7 @@
 					<img src="../img/list_buy_back.jpg" alt="Lista de compras">
 					<div class="cont">
 						<h3>Kevs_Cha</h3>
-						<h1>Lista de Compras</h1>
+						<h1>Shopping list</h1>
 						<h2 class="topic">Web Site</h2>
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem itaque pariatur, repudiandae consequuntur impedit consequatur totam sint iusto. Molestias aperiam error rerum, impedit reprehenderit hic amet fugiat quam expedita mollitia.</p>
 						<div class="skills_logo"></div>
@@ -184,29 +178,29 @@
 				<div class="item">
 					<img src="../img/card_buy2.png" alt="">
 					<div class="info">
-						<h3>Name slider</h3>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						<h3>Shopping list</h3>
+						<!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
 					</div>
 				</div>
 				<div class="item">
 					<img src="../img/card_crystal2.png" alt="">
 					<div class="info">
-						<h3>Name slider</h3>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						<h3>App Crystal Bubble</h3>
+						<!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
 					</div>
 				</div>
 				<div class="item">
 					<img src="../img/Mini_red.png" alt="">
 					<div class="info">
-						<h3>Name slider</h3>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						<h3>GeekyGram</h3>
+						<!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
 					</div>
 				</div>
 				<div class="item">
 					<img src="../img/42mad.jpg" alt="">
 					<div class="info">
-						<h3>Name slider</h3>
-						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						<h3>Projects 42madrid</h3>
+						<!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
 					</div>
 				</div>
 				<!-- <div class="item">
@@ -285,8 +279,8 @@
 					<p>Thank you for exploring my portfolio. If you’re interested in my work or have questions, I'd love to hear from you. Whether you have a project in mind, want to collaborate, or just want to connect, feel free to reach out. I'm always excited for new opportunities and ready to contribute my skills to meaningful projects. Let's create something amazing together!</p>
 					<div class="contact_social">
 						<div class="contact">
-							<a href=""><img src="../Img/Icons/mail (2).png" alt="Email"><span>k-e-v-i-n_13_@hotmail.com</span></a>
-							<a href="../src/Docs/Web Developer Kevin.pdf" download="CV  Kevin Web Developer.pdf"><img src="../Img/Icons/file-download.svg" alt="Dowload"><span>CV</span></a>
+							<a onclick="copy_clipboard()"><img src="../Img/Icons/mail (2).png" alt="Email"><span>k-e-v-i-n_13_@hotmail.com</span></a>
+							<a href="../src/Docs/Web Developer Kevin.pdf" download="CV Kevin_Quispe Web Developer.pdf"><img src="../Img/Icons/file-download.svg" alt="Dowload"><span>CV</span></a>
 							<a href="https://www.linkedin.com/in/kevin-quispe/" target="_blank" ><img src="../Img/Icons/brand-linkedin (1).png" alt="Linkedin">Linkedin</a>
 							<a href="https://github.com/KevsCha" target="_blank"><img src="../Img/Icons/brand-github (2).png" alt="Git-hub">Github</a>
 							<a href="https://www.instagram.com/ne_kevs" target="_blank"><img src="../Img/Icons/brand-instagram (1).svg" alt="Instagram"><span>Instagram</span></a>
@@ -294,27 +288,62 @@
 					</div>
 				</aside>
 				<div class="contact_form">
-					<form>
+					<form id="form">
 						<div class="form_field">
-							<input type="text" id="name" name="name field" required>
+							<input class="field_in" type="text" id="name" name="name" required>
 							<label for="name">Name</label>
 						</div>
 						<div class="form_field">
-							<input type="email" id="email" name="email field" required>
+							<input class="field_in" type="email" id="email" name="email" required>
 							<label for="email">Email</label>
 						</div>
 						<div class="form_field">
-							<textarea name="message field" id="message"></textarea>
+							<textarea class="field_in" id="message" name="message"></textarea>
 							<label for="message">Message</label>
 						</div>
 						<div class="form_field">
-							<button type="submit">Send</button>
+							<input id="button" type="submit" value="Send">
+							<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+							<script type="text/javascript">
+								emailjs.init('WQFwGU3WBhJT1elo3')
+							</script>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
+		<div id="popup" class="popup_message">
+			<span></span>
+		</div>
 	</main>
-	<script src="./js/index.js"></script>	
+	<script src="./js/index.js"></script>
+	<script>
+		const btn = document.getElementById('button');
+		console.log(btn);
+		document.getElementById('form').addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			btn.value = 'Sending...';
+
+			const serviceID = 'default_service';
+			const templateID = 'template_dcjcoao';
+
+			emailjs.sendForm(serviceID, templateID, this).then(() => {
+				btn.value = 'Send';
+				// alert('Sent!');
+				const popup = document.getElementById('popup');
+
+				popup.children[0].textContent = 'Email Sent Successfully!!';
+				popup.classList.add('activate');
+				setTimeout(() => {
+					popup.classList.remove('activate');
+				}, 3000);
+			}, (err) => {
+				btn.value = 'Send';
+				alert(JSON.stringify(err));
+			});
+		});
+	</script>
+	
 </body>
 </html>

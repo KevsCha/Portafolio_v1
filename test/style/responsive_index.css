@@ -13,16 +13,32 @@
         font-size: .8rem;
     }
     /*-------------------About_me--------------------*/
+    .about_me .contain_about .info_about span, 
+    .about_me .education_about .box_edu > span, 
+    .contact_me .contain_cont > span {
+        font-size: 100px;
+    }
     .about_me .contain_about .img_about{
         max-width: 300px;
         max-height: 300px;
+        margin-bottom: 40px;
     }
-    .about_me .contain_about .info_about span{
-        font-size: 100px;
+    .about_me .info_about p,
+    .about_me .education_about .item_about p,
+    .contact_me .contact_data p{
+        font-size: 1rem;
     }
+    .about_me .education_about .top_data h1,
+    .about_me .info_about h1{
+        font-size: 1.6rem;
+    }
+    /* .about_me .education_about .box_edu > span {
+        top: 5%;
+        transform: translate(-14px, 35%);
+    } */
 
 }
-@media only screen and (width < 678px){
+@media only screen and (width < 790px){
     header{
         padding: 0 10px;
         font-size: 1rem;
@@ -61,7 +77,43 @@
     .slider .cards_contain .card .cont h1{
         font-size: 30px;
         letter-spacing: 3px;
-    }   
+    }
+    .about_me .contain_about{
+        flex-direction: column-reverse;
+    }
+    .about_me .info_about p{
+        max-width: none;
+    }
+    /* -------------about------------------ */
+    .about_me .education_about .top_data span{
+        font-size: .8rem;
+        white-space: nowrap;
+    }
+    /* -------------contact_me------------ */
+    .contact_me{
+        padding: 30px 0 50px 0;
+    }
+    .contact_me .contain_cont > span{
+        top: -7%;
+    }
+    .contact_me .contain_cont{
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .contact_me .contact_data{
+        width: auto;
+    }
+    .contact_me .contact_form{
+        width: auto;
+        min-height: auto;
+        border-radius: 10px;
+    }
+    .contact_me .contact_form form{
+        padding: 10% 15%;
+        border-radius: 10px;
+
+    }
 }
 /*! 375 x 667 */
 /*
@@ -148,13 +200,18 @@
         height: 190px;
     } 
     */
+    .thumbnail .item .info h3{
+        letter-spacing: normal;
+    }
     .card .btns{
         display: flex;
         flex-direction: column;
         align-items: start;
     }
     .card .btns button{
-        padding: 10px;
+        min-width: 110px;
+        padding: 5px;
+        letter-spacing: normal;
     }
     .arrows{
         bottom: 75px;
@@ -167,8 +224,64 @@
         font-size: 30px;
         letter-spacing: 3px;
     }   
-    
+    /* ------------about_me------------- */
+    .about_me .contain_about .info_about span, 
+    .about_me .education_about .box_edu > span, 
+    .contact_me .contain_cont > span {
+        font-size: 80px;
+    }
+    .about_me .education_about .box_edu > span{
+        font-size: 60px;
+    }
+    .contact_data .contact{
+        justify-content: center;
+    }
+    .about_me .info_about p,
+    .about_me .education_about .item_about p,
+    .contact_me .contact_data p{
+        font-size: .8rem;
+    }
+    .about_me .education_about .top_data h1,
+    .about_me .info_about h1{
+        font-size: 1.2rem;
+    }
+    /* ------------Contact_me-------------- */
+    .contact_me .contact_form form{
+        padding: 7% 10%;
+        /* border-radius: 10px; */
+    }
 }
+@media only screen and (width <= 400px){
+    /*----------projects------------------- */
+    .thumbnail .item {
+        width: 140px;
+        height: 180px;
+        flex-shrink: 0;
+        position: relative;
+        color: #fff;
+    }
+  
+    .arrows {
+        bottom: 50px;
+    }
+    /*------------about_me--------------- */
+    .about_me .education_about .box_edu > span,
+    .contact_me .contain_cont > span{
+        font-size: 50px;
+    }
+    .about_me .education_about .top_data h1,
+    .about_me .info_about h1{
+        font-size: 1rem;
+    }
+    /* ------------contact_me------------- */
+    .contact_me .contact_data{
+        padding: 0;
+    }
+    .contact_me .contact_form form {
+        padding: 15% 10%;
+    }
+}
+
 /*720 x 1280*/
 /*
     *mantener el nav

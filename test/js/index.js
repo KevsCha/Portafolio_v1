@@ -46,10 +46,12 @@ menu_hamburguer.onclick = () => {
 let btn_select = Array.from(menu_nav.children);
 btn_select.forEach((btn) => {
     btn.addEventListener('click', () => {
+        console.log(btn.id);
         btn_select.forEach((btn) => {
             btn.classList.remove('active');
         });
-        btn.classList.add('active');
+        if (btn.id != 'nav_cv')
+            btn.classList.add('active');
     });
 });
 console.log(btn_select);
@@ -58,12 +60,12 @@ document.addEventListener('DOMContentLoaded', () =>{
     const sections = document.querySelectorAll('[name*="section"]');
     const cpy_nav = [...btn_select];
 
-    
     window.addEventListener('scroll', () => {
         let scroll = window.scrollY;
-        console.log(scroll);
+        // console.log(scroll);
         sections.forEach((section, i) => {
-            console.log('posicion de cada section____' + section.offsetTop + '____' + section.className);
+            // console.log('posicion de cada section____' + section.offsetTop + '____' + section.className);
+            console.log();
             if(scroll >= section.offsetTop - 300){
                 console.log();
                 cpy_nav.forEach((btn) => {
@@ -77,11 +79,11 @@ document.addEventListener('DOMContentLoaded', () =>{
 });
 
 /*-------------------add class to input, modified label------- */
-const inputs = document.querySelectorAll('[name*="field"]');
+const inputs = document.querySelectorAll('.field_in');
 //Este forEach recorre todos los inputs
 inputs.forEach((input) => {
     input.addEventListener('input', () => {
-        console.log(input.value);
+        // console.log(input.value);
         if(input.value != '')
             input.classList.add('field');
         else 
@@ -110,3 +112,15 @@ console.log(name_porfolio);
 //     setInterval(auto_complete, 1000);
 // }
 // auto_complete(i);
+/*---------------------copy_clipboard--------------- */
+function copy_clipboard(){
+    let email = document.getElementById('url_email');
+    const popup = document.getElementById('popup');
+
+    popup.children[0].textContent = 'Copied Email';
+    popup.classList.add('activate');
+    setTimeout(() => {
+        popup.classList.remove('activate');
+    }, 2000);
+    navigator.clipboard.writeText(email.children[1].textContent);
+}
