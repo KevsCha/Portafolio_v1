@@ -176,7 +176,6 @@ li{
     z-index: 5;
 }
 img[alt="html"] + span{
-    /* filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 50%)) grayscale(0%); */
     background-color: #f16529;
 }
 img[alt="html"]:hover + span{
@@ -215,7 +214,7 @@ img[alt="js"]:hover + span{
     display: grid;
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
-    gap: 5px;
+    gap: 25px;
     margin-top: 20px;
 }
 .card .btns button{
