@@ -32,21 +32,18 @@ function show_slider(type){
         slider.classList.remove('next');
         slider.classList.remove('prev');
     }, timing);
-    console.log(item_slider, item_thumbnail);
 }
 /*-------------- menu Hamburguesa ------------- */
 const menu_hamburguer = document.querySelector('.hamburguer');
 const menu_nav = document.getElementById('nav_menu');
 menu_hamburguer.onclick = () => {
     menu_hamburguer.classList.toggle('is_activate');
-    // document.querySelector('.menu').classList.toggle('is_activate');
     menu_nav.classList.toggle('is_activate');
 };
 /*------------------- select_menu----------------- */
 let btn_select = Array.from(menu_nav.children);
 btn_select.forEach((btn) => {
     btn.addEventListener('click', () => {
-        console.log(btn.id);
         btn_select.forEach((btn) => {
             btn.classList.remove('active');
         });
@@ -54,7 +51,6 @@ btn_select.forEach((btn) => {
             btn.classList.add('active');
     });
 });
-console.log(btn_select);
 /*-------------------scroll----------------- */
 document.addEventListener('DOMContentLoaded', () =>{
     const sections = document.querySelectorAll('[name*="section"]');
@@ -62,12 +58,8 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     window.addEventListener('scroll', () => {
         let scroll = window.scrollY;
-        // console.log(scroll);
         sections.forEach((section, i) => {
-            // console.log('posicion de cada section____' + section.offsetTop + '____' + section.className);
-            console.log();
             if(scroll >= section.offsetTop - 300){
-                console.log();
                 cpy_nav.forEach((btn) => {
                     btn.classList.remove('active');
                 });
@@ -75,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () =>{
             }
         });
     });
-    console.log(cpy_nav, sections);
 });
 
 /*-------------------add class to input, modified label------- */
@@ -83,7 +74,6 @@ const inputs = document.querySelectorAll('.field_in');
 //Este forEach recorre todos los inputs
 inputs.forEach((input) => {
     input.addEventListener('input', () => {
-        // console.log(input.value);
         if(input.value != '')
             input.classList.add('field');
         else 
@@ -96,22 +86,6 @@ const user_data = Array.from(info_us.children);
 
 let name_porfolio = 'Kevin David Quispe';
 
-// if(name[1])
-
-let i = 0;
-console.log(name_porfolio);
-    // auto_complete();
-    
-// function auto_complete(i) {
-//     let temp = document.querySelector('.info_us');
-//     // temp.children[1].innerHTML += name_porfolio[i];
-//     // console.log(temp.children[i);
-//     // if (temp){
-        
-//     // }
-//     setInterval(auto_complete, 1000);
-// }
-// auto_complete(i);
 /*---------------------copy_clipboard--------------- */
 function copy_clipboard(){
     let email = document.getElementById('url_email');
