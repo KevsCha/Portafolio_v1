@@ -229,15 +229,12 @@ img[alt="js"]:hover + span{
     min-width: 140px;
 }
 .card .btns button:nth-child(1) a{
-    /* background-color: #333; */
     color: #333;
     text-shadow: none;
-    /* font-weight: 800; */
 }
 .card .btns button:nth-child(1):hover{
     background-color: rgb(255, 165, 0, .5);
     color: #fff;
-    /* border: 1px solid #fff; */
     box-shadow: 0 0 0 1px #fff;
 }
 .card .btns button:hover a{
@@ -252,16 +249,9 @@ img[alt="js"]:hover + span{
 .card .btns button:nth-child(2):hover{
     background-color: rgb(255, 165, 0, .5);
     color: #333;
-    /* border: 1px solid #333; */
     box-shadow: 0 0 0 1px #333;
 }
-/* .card .btns button:nth-child(2):hover a{
-    text-shadow: none;
- } */
-/* .red_social .cont h1::after{
-    content: 'Gram';
-    color: rgb(255, 115, 0);
-} */
+
 /*---------------- thumbnail ---------------------*/
 .thumbnail{
     position: absolute;
@@ -271,7 +261,6 @@ img[alt="js"]:hover + span{
     gap: 20px;
     z-index: 50;
     width: max-content;
-    /* width: 43vw; */
     overflow: hidden;
     user-select: none;
 }
@@ -297,14 +286,9 @@ img[alt="js"]:hover + span{
 }
 .thumbnail .item .info h3{
     font-weight: bold;
-    /* letter-spacing: 2px; */
     color: orange;
-
     text-shadow: 0 0px 10px #000000;
 }
-/* .thumbnail.is_activate{
-    visibility: hidden;
-} */
 /* -----------------arrows----------------- */
 .arrows{
     position: absolute;
@@ -443,9 +427,7 @@ img[alt="js"]:hover + span{
     width: 0;
     overflow: hidden;
     opacity: 0;
-    animation: showthumbnail 0.5s linear 1 forwards; 
-    /* 
-    */
+    animation: showthumbnail 0.5s linear 1 forwards;
 }
 .slider.prev .cards_contain .card:nth-child(2) h3,
 .slider.prev .cards_contain .card:nth-child(2) h1,
@@ -462,10 +444,6 @@ img[alt="js"]:hover + span{
         transform: translateY(-150px);
         filter: blur(20px);
     }
-}
-.slider.next .arrows button,
-.slider.prev .arrows button{
-    /* pointer-events: none; */
 }
 /*---------------- loading card -------------------*/
 .loading{
@@ -488,68 +466,6 @@ img[alt="js"]:hover + span{
     }
 }
 
-/* -----img contain -----*/
-/* .slider .card .box_mockup{
-    display: none;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    right: 0%;
-}
-.slider .card .contain{
-    position: absolute;
-    width: 700px;
-    margin: 50px auto;
-    height: 250px;
-    transform: translateX(-100%);
-    perspective: 700px;
-}
-.slider .card .box_mockup  img{
-    position: absolute;
-    height: 100%;
-    width: 125px;
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-}
-.slider .card .box_mockup img[alt="uno"]{
-    top: 50%;
-    left: 10%;
-    transform: rotateY(45deg) scale(1) translate(0%, -25%);
-    box-shadow: -10px 5px 15px 0px rgb(0 0 0 / 50%);
-    z-index: 1;
-}
-.slider .card .box_mockup img[alt="dos"]{
-    top: 50%;
-    left: 19%;
-    transform: rotateY(45deg) translate(25%, -25%) scale(1.2);
-    box-shadow: -10px 5px 15px 0px rgb(0 0 0 / 50%);
-    z-index: 5;
-}
-.slider .card .box_mockup img[alt="tres"]{
-    inset: 50% 0% 0% 41%;
-    transform: scale(1.4) translate(0%, -25%);
-    z-index: 10;
-    box-shadow: 0px 20px 10px -10px rgb(0 0 0 / 50%);
-}
-.slider .card .box_mockup img[alt="cuatro"]{
-    top: 50%;
-    right: 19%;
-    transform: rotateY(-45deg) translate(-25%, -25%) scale(1.2);
-    box-shadow: 10px 5px 15px 0px rgb(0 0 0 / 50%);
-    z-index: 5;
-}
-.slider .card .box_mockup img[alt="cinco"]{
-    top: 50%;
-    right: 10%;
-    transform: rotateY(-45deg) translate(0%, -25%) scale(1);
-    box-shadow: 10px 5px 15px 0px rgb(0 0 0 / 50%);
-    z-index: 1;
-}
-.slider .cards_contain .box_mockup .contain > img:hover{
-    z-index: 15;
-    transform: scale(1.2);
-    border-radius: 15px;
-} */
 /*-------------------- Style_Home --------------------*/
 .home{
     height: 100vh;
@@ -561,19 +477,15 @@ img[alt="js"]:hover + span{
 .home .bg_back{
     width: 100%;
     height: inherit;
-    /* top: -20%; */
     position: absolute;
-    /* url_file */
     background-image: url('../../img/setup2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* backdrop-filter: blur(5px); */
 }
 .home section{
     width: 100%;
-    /* margin-top: 300px; */
     min-height: 400px;
     padding: 1.5rem;
     position: relative;
@@ -585,24 +497,6 @@ img[alt="js"]:hover + span{
     align-items: center;
     animation: opacity .5s linear forwards;
 }
-/* .home section::before{
-    content: '';
-    width: 14%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #333;
-}
-.home section::after{
-    content: '';
-    width: 15%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    top: 0;
-    background-color: #333;
-} */
 .home section > img{
     max-width: 300px;
     /* height: 80%; */
@@ -628,12 +522,6 @@ img[alt="js"]:hover + span{
 .home section .info_us{
     max-width: 900px;
     width: 65%;
-    /* align-self: center; */
-    /* margin: 0 auto; */
-    /* gap: 50px; */
-    /* font-family: 'lazy-tueday'; */
-    /* letter-spacing: 3px; */
-    /* text-align: center; */
 }
 .home section .info_us > h3,
 .home section .info_us > h1,
@@ -669,9 +557,6 @@ img[alt="js"]:hover + span{
     font-size: 3.5rem;
     color: rgb(255, 166, 0);
     margin-bottom: 20px;
-    /* letter-spacing: 5px; */
-    
-    /* text-shadow: 0 0px 20px rgb(255, 165, 0), 2px 2px 1px rgb(0, 0, 0); */
 }
 .home section .info_us > p{
     font-size: 1.2rem;
@@ -706,7 +591,6 @@ img[alt="js"]:hover + span{
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5) ,rgb(51, 51, 51 , .5));
     scale: 1.1;
 }
-/* -------------------end_home----------------- */
 /* -------------------about_me---------------- */
 .about_me{
     background-color: #333;
@@ -821,7 +705,6 @@ img[alt="js"]:hover + span{
     align-items: center;
     position: relative;
     gap: 15px;
-    /* margin-left: 20px; */
 }
 .about_me .education_about .top_data span,
 .about_me .education_about .item_about p,
@@ -868,7 +751,6 @@ img[alt="js"]:hover + span{
 }
 
 .contact_me .contact_data{
-    /* position: relative; */
     width: 40%;
     padding: 0 20px;
     display: flex;
