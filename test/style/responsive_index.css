@@ -252,6 +252,19 @@
 }
 @media only screen and (width <= 400px){
     /*----------projects------------------- */
+    .thumbnail {
+        left: 55%;
+        bottom: 20px;
+    }
+    @keyframes outimage{
+        to{
+            width: 140px;
+            height: 180px;
+            left: 55%;
+            bottom: 20px;
+            border-radius: 10px;
+        }
+    }
     .thumbnail .item {
         width: 140px;
         height: 180px;

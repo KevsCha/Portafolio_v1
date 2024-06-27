@@ -223,9 +223,9 @@ img[alt="js"]:hover + span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
     font-weight: 500;
-    /* padding: 3px; */
     color: #333;
     transition: background-color 0.3s;
+    min-width: 140px;
 }
 .card .btns button:nth-child(1) a{
     /* background-color: #333; */
@@ -296,7 +296,7 @@ img[alt="js"]:hover + span{
 }
 .thumbnail .item .info h3{
     font-weight: bold;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     color: orange;
 
     text-shadow: 0 0px 10px #000000;
