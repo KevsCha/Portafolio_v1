@@ -32,7 +32,6 @@ function show_slider(type){
         slider.classList.remove('next');
         slider.classList.remove('prev');
     }, timing);
-    console.log(item_slider, item_thumbnail);
 }
 /*-------------- menu Hamburguesa ------------- */
 const menu_hamburguer = document.querySelector('.hamburguer');
@@ -45,7 +44,6 @@ menu_hamburguer.onclick = () => {
 let btn_select = Array.from(menu_nav.children);
 btn_select.forEach((btn) => {
     btn.addEventListener('click', () => {
-        console.log(btn.id);
         btn_select.forEach((btn) => {
             btn.classList.remove('active');
         });
@@ -53,7 +51,6 @@ btn_select.forEach((btn) => {
             btn.classList.add('active');
     });
 });
-console.log(btn_select);
 /*-------------------scroll----------------- */
 document.addEventListener('DOMContentLoaded', () =>{
     const sections = document.querySelectorAll('[name*="section"]');
@@ -69,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () =>{
             }
         });
     });
-    console.log(cpy_nav, sections);
 });
 
 /*-------------------add class to input, modified label------- */
