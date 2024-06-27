@@ -1,4 +1,4 @@
-@import url('base.css');
+@import url('./base.css');
 
 /* !se cambio el main de 97 a 100 vh */
 main{
@@ -246,7 +246,7 @@ main > .btn{
     background-color: white;
 } */
 .list_buy{
-    background: url('../../img/card_buy2.png');
+    background: url('../../../img/card_buy2.png');
     background-position: center;
     background-size: 100% 100%;
     padding: 1.5rem;
@@ -258,7 +258,7 @@ main > .btn{
     color: #EDC418;
 }
 .crystal_bubble{
-    background: url('../../img/card_crystal2.png');
+    background: url('../../../img/card_crystal2.png');
     background-position: center;
     
     background-size: 100% 100%;

@@ -4,114 +4,322 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevs-Portafolio</title>
-    <link rel="stylesheet" href="./styles/background_animation.css">
-    <!-- <link rel="stylesheet" href="index.css"> -->
+	<link rel="stylesheet" href="./src/style/index.css">
+	<link rel="stylesheet" href="./src/style/responsive_index.css">
 </head>
 <body>
-    <section class="background-animate">
-        <!-- animacion del lado izquierdo -->
-        <span class="top-left"></span>
-        <span class="dis-s-sem-left"></span>
-        <span class="sem-left"></span>
-        <span class="dis-sem-left"></span>
-        <span class="mid-left"></span>
-        <span class="sem-bott-left"></span>
-        <span class="sem-s-bott-left"></span>
-        <span class="bottom-left"></span>
-        <!-- animacion del lado derecho  -->
-        <span class="dis-top-right"></span>
-        <span class="mid-right"></span>
-        <span class="sem-right"></span>
-        <span class="sem-s-right"></span>
-        <span class="sem-m-right"></span>
-        <span class="sem-bott-right"></span>
-        <span class="sem-s-bott-right"></span>
-        <span class="bottom-right"></span>
-    </section>
-    <main>
-        <nav class="nav_slider">
-            <div class="slide _home">
-                <h1>Home</h1>
-                <div class="home_container">
-                    <div class="cont_img">
-                        <img src="../img/Prueba_foto.jpg" alt="Foto de Kevin">
-                    </div>
-                    <div class="info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere possimus alias porro nisi. Dolorem aut consequuntur, blanditiis fugit nihil expedita totam libero cupiditate adipisci ipsum cumque eligendi vero maiores deleniti?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, esse quia inventore repellat doloremque suscipit commodi eos nulla cupiditate necessitatibus accusantium recusandae sapiente sunt assumenda delectus qui non optio ea.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="slide _projects">
-                <h1>Projects</h1>
-                <div class="projects_container">
-                    <div class="projects_info">
-                        <!-- diseñar mejor la projects info de las cards -->
-                        <div class="background_window">
-                            <!-- <img class="" src="../img/42mad.jpg" alt=""> -->
-                        </div>
-                        <div class="box_info">
-                            <h1>Proyectos de 42 Madrid</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem, voluptas consectetur assumenda aperiam reiciendis voluptatibus a obcaecati unde nihil eligendi sed eos debitis labore, eaque repellendus? Minima, natus vero.</p>
-                            <ul>
-                                <li>Libft</li>
-                                <li>Get_next_line</li>
-                                <li>Printf</li>
-                                <li>So_long</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="projects_card">
-                        <div id="1" class="card campus_42">
-                            <img class="img_back" src="../img/42mad.jpg" alt="Persona codificando en 42madrid">
-                            <div class="info">
-                                <img class="logo_42" src="../Img/42LogoNew.png" alt="">
-                                <h1>< <span class="color_title1">PROJECTS <span class="font_txt">42</span></span> /<span class="color_title2">></span></h1>
-                                <img class="logo_pineapple_1" src="../img/Icons/Pineapple.png" alt="">
-                                <img class="logo_pineapple_2" src="../Img/Icons/Pineapple.png" alt="">
-                            </div>
-                        </div>
-                        <div id="2" class="card list_buy">
-                            <p>LIsta de</p><p>compras</p>
-                        </div>
-                        <div id="3" class="card crystal_bubble">
+    <!-- Header -->
+	<header>
+		<div class="hamburguer">
+			<div class="_layer _top"></div>
+			<div class="_layer _mid"></div>
+			<div class="_layer _bot"></div>
+		</div>
+		<nav id="nav_menu" class="">
+			<a id="nav_home" href="#home" class="active">Home <span></span></a>
+			<a id="nav_projects" href="#projects">Projects <span></span></a>
+			<a id="nav_about" href="#about">About me <span></span></a>
+			<a id="nav_contact" href="#contact">Contact <span></span></a>
+			<a id="nav_cv" href="./src/Docs/Web Developer Kevin.pdf" download="CV Kevin_Quispe Web Developer.pdf">CV <span></span></a>
+		</nav>
+	</header>
+	<main>
+		<!-- Home -->
+		<div id="home" class="home" name="section">
+			<div class="bg_back"></div>
+			<section>
+				<!-- 
+				<img src="../img/Prueba_foto.jpg" alt="">
+					<span class="_layer"></span> 
+				-->
+				<div class="info_us">
+					<h3>Full Stack - Developer</h3>
+					<h1>Kevin David Quispe</h1>
+					<p>¡¡Hey!! Welcome to my portfolio! Here you will find a collection of web projects, both personal and team, that show my passion and the skill I have acquired. Enjoy exploring</p>
+					<div class="contact">
+						<a href="https://www.linkedin.com/in/kevin-quispe/" target="_blank" ><img src="../Img/Icons/brand-linkedin (1).png" alt="Linkedin">Linkedin</a>
+						<a href="https://github.com/KevsCha" target="_blank"><img src="../Img/Icons/brand-github (2).png" alt="Git-hub">Github</a>
+						<a id="url_email" onclick="copy_clipboard()" href="#"><img src="../Img/Icons/mail (2).png" alt="Email"><span>k-e-v-i-n_13_@hotmail.com</span></a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- slider -->
+		<div id="projects" class="slider" name="section">
+			<!-- cards_background -->
+			<div class="cards_contain">
+				<!-- 42madrid -->
+				<div class="card">
+					<img src="./img/42mad.jpg" alt="42_madrid">
+					<div class="cont">
+						<h3>Kevs_Cha</h3>
+						<h1>Projects 42 Madrid</h1>
+						<h2 class="topic">Software development</h2>
+						<p>This section features the ongoing projects I am developing at 42 Madrid, a renowned coding school known for its innovative, peer-to-peer learning environment. Here, you will find a showcase of my work in front-end and back-end development, problem-solving, and collaboration.</p>
+						<div class="skills_logo"></div>
+						<div class="btns">
+							<!-- <button><a href="" target="_blank">SEE MORE</a></button> -->
+							<button><a href="https://github.com/KevsCha/42madrid" target="_blank">SEE MORE</a></button>
+						</div>
+					</div>
+				</div>
+				<!-- Lista de compras -->
+				<div class="card">
+					<img src="./img/list_buy_back.jpg" alt="Lista de compras">
+					<div class="cont">
+						<h3>Kevs_Cha</h3>
+						<h1>Shopping list</h1>
+						<h2 class="topic">Web Site</h2>
+						<p>This shopping list project is one of my first web applications, designed to help users efficiently organize and manage their shopping. Developed with HTML, CSS, and JavaScript, the application uses localStorage and a JSON file to store product information.</p>
+						<div class="skills_logo"></div>
+						<div class="btns">
+							<button><a href="https://github.com/KevsCha/Lista_de_Compra">SEE MORE</a></button>
+							<button><a href="https://kevscha.github.io/Lista_de_Compra/" target="_blank">Deploy</a></button>
+						</div>
+					</div>
+				</div>
+				<!-- App crytal bubble -->
+				<div class="card">
+					<img src="./img/crystal_back.png" alt="app crystal">
+					<!-- <div class="box_mockup">
+						<div class="contain">
+							<img src="../img/Icons/desing_crystal3.png" alt="uno">
+							<img src="../img/Icons/desing_crystal2.png" alt="dos">
+							<img src="../img/Icons/desing_middle.png" alt="tres">
+							<img src="../img/Icons/desing_crystal4.png" alt="cuatro">
+							<img src="../img/Icons/desing_crytal.png" alt="cinco">
+						</div>
+					</div> -->
+					<div class="cont">
+						<h3>Kevs_Cha</h3>
+						<h1>App Crystal bubble</h1>
+						<h2 class="topic">App</h2>
+						<p>This project is the result of a final course project completed as a team. The main objective was to develop a mobile application using Ionic and React.js, aiming to apply and consolidate the knowledge gained throughout the course.</p>
+						<div class="btns">
+							<button><a href="https://github.com/FerNandaRM05/Proy_final_Crystal_Bubble">SEE MORE</a></button>
+							<!-- <button><a href="">Pendiente</a></button> -->
+						</div>
+					</div>
+				</div>
+				<!-- mini Red Social -->
+				<div class="card red_social">
+					<img src="./img/Mini_red.png" alt="red social">
+					<div class="cont">
+						<h3>Kevs_Cha</h3>
+						<h1>GekkyGram</h1>
+						<h2 class="topic">Red Social</h2>
+						<p>The developed application is a social network that allows users to register, log in, and upload images. The main objective was to apply and reinforce concepts learned in PHP and other essential web technologies. It was also one of our first group projects, utilizing Git and other collaboration tools. We implemented key features typical of a modern social network.</p>
+						<div class="btns">
+							<button><a href="">SEE MORE</a></button>
+							<!-- <button><a href="">Pendiente</a></button> -->
+						</div>
+					</div>
+				</div>
+				<!-- Apartado de unity -->
+				<!-- <div class="card">
+					<img src="../img/42mad.jpg" alt="$2_madrid">
+					<div class="cont">
+						<h3>Kevs_Cha</h3>
+						<h1>Projects 42 madrid</h1>
+						<h2 class="topic"></h2>
+						<ul>
+							<li>Libft</li>
+							<li>Get Next Line</li>
+							<li>So_Long</li>
+							<li>Born2beroot</li>
+						</ul>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem itaque pariatur, repudiandae consequuntur impedit consequatur totam sint iusto. Molestias aperiam error rerum, impedit reprehenderit hic amet fugiat quam expedita mollitia.</p>
+						<div class="skills_logo"></div>
+						<div class="btns">
+							<button><a href="">SEE MORE</a></button>
+							<button><a href="">Pendiente</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<img src="../img/42mad.jpg" alt="$2_madrid">
+					<h1>Projects 42 madrid</h1>
+					<ul>
+						<li>Libft</li>
+						<li>Get Next Line</li>
+						<li>So_Long</li>
+						<li>Born2beroot</li>
+					</ul>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem itaque pariatur, repudiandae consequuntur impedit consequatur totam sint iusto. Molestias aperiam error rerum, impedit reprehenderit hic amet fugiat quam expedita mollitia.</p>
+					<div class="skills_logo"></div>
+					<div class="btns">
+						<button>SEE MORE</button>
+						<button>Pendiente</button>
+					</div>
+				</div> -->
+			</div>
+			<!-- thumbnail -->
+			<div class="thumbnail ">
+				<div class="item">
+					<img src="./img/list_buy_back.jpg" alt="">
+					<div class="info">
+						<h3>Shopping list</h3>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./img/crystal_back.png" alt="">
+					<div class="info">
+						<h3>App Crystal Bubble</h3>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./img/Mini_red.png" alt="">
+					<div class="info">
+						<h3>GeekyGram</h3>
+					</div>
+				</div>
+				<div class="item">
+					<img src="./img/42mad.jpg" alt="">
+					<div class="info">
+						<h3>Projects 42madrid</h3>
+					</div>
+				</div>
+				<!-- <div class="item">
+					<img src="../img/Mini_red.png" alt="">
+					<div class="info">
+						<h3>Name slider</h3>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+					</div>
+				</div> -->
+				
+			</div>
+			<div class="arrows">
+				<button id="prev"><</button>
+				<button id="next">></button>
+			</div>
+			<div class="loading"></div>
+		</div>
+		<!-- About me -->
+		<div id="about" class="about_me" name="section">
+			<div class="contain_about">
+				<div class="img_about">
+					<img src="./img/Prueba_foto.jpg" alt="foto de portada">
+				</div>
+				<div class="info_about">
+					<span>ABOUT</span>
+					<div>
+						<h1>Hi! I'm Kevin Quispe</h1>
+						<p>If you are looking for someone who is resolute, persistent, and passionate about web development, then I am the person you need. I love taking on challenges and finding creative solutions to complex problems. My passion for web programming is immense, and I am always eager to contribute my skills and enthusiasm to any project.</p>
+						<p>While I am at the beginning of my professional career, I have a solid foundation in both front-end and back-end technologies and an unwavering dedication to learning and growth. My self-taught background and personal projects have equipped me with the knowledge and skills necessary to deliver scalable and high-quality web applications.</p>
+					</div>
+				</div>
+			</div>
+			<div class="education_about">
+				<div class="box_edu">
+					<span>Education</span>
+					<article class="item_about">
+						<div class="top_data">
+							<h1>Web Developer</h1>
+							<span>02/2024 - Actualidad</span>
+						</div>
+						<p>Creation and Publication of Web Pages (560 Hours) | Móstoles Desarrollo</p>
+					</article>
+					<article class="item_about">
+						<div class="top_data">
+							<h1>Software Developer</h1>
+							<span>06/2023 - 03/2024</span>
+						</div>
+						<p>42 Madrid | Telefónica</p>
+					</article>
+					<article class="item_about">
+						<div class="top_data">
+							<h1>Game Developer</h1>
+							<span>09/2023 - 11/2023</span>
+						</div>
+						<p>Video Game Programming, 3D Design (260 Hours) | Adecco Red.es</p>
+					</article>
+					<article class="item_about">
+						<div class="top_data">
+							<h1>Full Stack - Web Developer</h1>
+							<span>04/2022 - 12/2022</span>
+						</div>
+						<p>FullStack Web Development Bootcamp (1000 Hours) | La Rueca Asociación</p>
+					</article>
+				</div>
+			</div>
+			<div class="skills_about">
+				
+			</div>
+			<div class="layer_bottom"></div>
+		</div>
+		<!-- Contact -->
+		<div id="contact" class="contact_me" name="section">
+			<div class="contain_cont">	
+				<span>Contact</span>
+				<aside class="contact_data">
+					<p>Thank you for exploring my portfolio. If you’re interested in my work or have questions, I'd love to hear from you. Whether you have a project in mind, want to collaborate, or just want to connect, feel free to reach out. I'm always excited for new opportunities and ready to contribute my skills to meaningful projects. Let's create something amazing together!</p>
+					<div class="contact_social">
+						<div class="contact">
+							<a onclick="copy_clipboard()"><img src="../Img/Icons/mail (2).png" alt="Email"><span>k-e-v-i-n_13_@hotmail.com</span></a>
+							<a href="./src/Docs/Web Developer Kevin.pdf" download="CV Kevin_Quispe Web Developer.pdf"><img src="../Img/Icons/file-download.svg" alt="Dowload"><span>CV</span></a>
+							<a href="https://www.linkedin.com/in/kevin-quispe/" target="_blank" ><img src="../Img/Icons/brand-linkedin (1).png" alt="Linkedin">Linkedin</a>
+							<a href="https://github.com/KevsCha" target="_blank"><img src="../Img/Icons/brand-github (2).png" alt="Git-hub">Github</a>
+							<a href="https://www.instagram.com/ne_kevs" target="_blank"><img src="../Img/Icons/brand-instagram (1).svg" alt="Instagram"><span>Instagram</span></a>
+						</div>
+					</div>
+				</aside>
+				<div class="contact_form">
+					<form id="form">
+						<div class="form_field">
+							<input class="field_in" type="text" id="name" name="name" required>
+							<label for="name">Name</label>
+						</div>
+						<div class="form_field">
+							<input class="field_in" type="email" id="email" name="email" required>
+							<label for="email">Email</label>
+						</div>
+						<div class="form_field">
+							<textarea class="field_in" id="message" name="message"></textarea>
+							<label for="message">Message</label>
+						</div>
+						<div class="form_field">
+							<input id="button" type="submit" value="Send">
+							<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+							<script type="text/javascript">
+								emailjs.init('WQFwGU3WBhJT1elo3')
+							</script>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="popup" class="popup_message">
+			<span></span>
+		</div>
+	</main>
+	<script src="./src/js/index.js"></script>
+	<script>
+		const btn = document.getElementById('button');
+		console.log(btn);
+		document.getElementById('form').addEventListener('submit', function(event) {
+			event.preventDefault();
 
-                        </div>
-                        <div class="card foro_page">
+			btn.value = 'Sending...';
 
-                        </div>
-                        <div class="card mini_red_social">
+			const serviceID = 'default_service';
+			const templateID = 'template_dcjcoao';
 
-                        </div>
-                        <div class="card unity_pong">
+			emailjs.sendForm(serviceID, templateID, this).then(() => {
+				btn.value = 'Send';
+				// alert('Sent!');
+				const popup = document.getElementById('popup');
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide _about_me">
-                <h1>About me</h1>
-                <div>
-
-                </div>
-            </div>
-            <div class="slide _contact">
-                <h1>Contact</h1>
-            </div>
-            <div class="slide _cv">
-                <h1>CV</h1>
-            </div>
-        </nav>
-        <span class="btn prev"><img src="../img/Icons/left_icon.svg" alt=""></span>
-        <span class="btn next"><img src="../img/Icons/right_arrow_icon.svg" alt=""></span>
-        <!-- <nav class="bar_nav_float">
-            <span><img src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/email.png" alt="email"/></span>
-            <span><img src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/google-code.png" alt="google-code"/></span>
-            <span><img src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/home-page.png" alt="home-page"/></span>
-            <span><img src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/user-default.png" alt="user-default"/></span>
-            <span><img src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/parse-from-clipboard.png" alt="parse-from-clipboard"/>></span>
-        </nav> -->
-    </main>
+				popup.children[0].textContent = 'Email Sent Successfully!!';
+				popup.classList.add('activate');
+				setTimeout(() => {
+					popup.classList.remove('activate');
+				}, 3000);
+			}, (err) => {
+				btn.value = 'Send';
+				alert(JSON.stringify(err));
+			});
+		});
+	</script>
+	
 </body>
-<script src="./js/index.js"></script>
 </html>

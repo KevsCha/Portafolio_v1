@@ -6,7 +6,7 @@
     /* display: none; */
     /* z-index: 0; */
     background-image: 
-        url('/img/index_modificade_1600x900.jpg'),
+        url('../../../img/index_modificade_1600x900.jpg'),
         radial-gradient(circle, #7e0e5b, #250c65)
         ;
     /* background-image: linear-gradient(to right,

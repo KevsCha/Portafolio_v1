@@ -1,4 +1,4 @@
-@import url('../../src/styles/base.css');
+@import url('./base.css');
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -14,11 +14,11 @@ header{
     align-items: start;
     justify-content: center;
     position: fixed;
-    /* box-shadow: 0 5px 5px rgba(75, 75, 75, 0.5); */
+    box-shadow: 0 0px 10px #0e0e0ec0;
     /* backdrop-filter: blur(10px); */
-    z-index: 100;    
+    z-index: 100;
     backdrop-filter: blur(10px);
-    background: #0000006e;
+    background: #00000046;
 }
 header .hamburguer{
     position: absolute;
