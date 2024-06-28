@@ -79,6 +79,7 @@
     }
     .about_me .contain_about{
         flex-direction: column-reverse;
+        gap: 25px;
     }
     .about_me .info_about p{
         max-width: none;
@@ -127,6 +128,7 @@
         font-size: 1rem;
         backdrop-filter: blur(0);
         box-shadow: none;
+        background-color: transparent;
     }
     header .hamburguer{
         display: block;
