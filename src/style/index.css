@@ -596,21 +596,23 @@ img[alt="js"]:hover + span{
     width: 1140px;
     max-width: 80%;
     margin: 0 auto;
-    gap: 30px;
+    gap: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 .about_me .contain_about .img_about{
     max-width: 450px;
     max-height: 450px;
+    /* transform: translateX(-50px); */
 }
 .about_me .contain_about img{
     /* max-width: 450px; */
-    width: 100%;
-    height: 100%;
+    width: 115%;
+    height: 450px;
     border-radius: 0 50% 50% 50%;
     object-fit: cover;
+    object-position: top ;
     box-shadow: -10px 20px 0px 2px #656565;
 }
 .about_me .contain_about .info_about{
