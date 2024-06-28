@@ -874,14 +874,15 @@ img[alt="js"]:hover + span{
     align-items: center;
     transition: all 0.3s linear;
     z-index: 1000;
+    opacity: 0;
 }
 .popup_message.activate{
     animation: showmessage .3s linear forwards;   
     transition: all 0.3s linear;
-
 }
 @keyframes showmessage {
     to{
+        opacity: 1;
         left: 15px;
         bottom: 2%;
     }
