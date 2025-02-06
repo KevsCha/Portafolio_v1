@@ -85,6 +85,13 @@
         max-width: none;
     }
     /* -------------about------------------ */
+    .about_me .contain_about .info_about span {
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+    .about_me .info_about h1 {
+        text-align: center;
+    }
     .about_me .contain_about .img_about {
         transform: translateX(-50px);
     }
@@ -95,6 +102,11 @@
     .about_me .education_about .top_data span{
         font-size: .8rem;
         white-space: nowrap;
+    }
+    /* -------------education------------- */
+    .about_me .education_about .box_edu > span {
+        left: 50%;
+        transform: translate(-50%, 20%);
     }
     /* -------------contact_me------------ */
     .contact_me{
