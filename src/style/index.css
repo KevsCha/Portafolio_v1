@@ -598,23 +598,21 @@ img[alt="js"]:hover + span{
     margin: 0 auto;
     gap: 50px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    /* align-items: center; */
+    /* justify-content: space-around; */
 }
-.about_me .contain_about .img_about{
+/* .about_me .contain_about .img_about{
     max-width: 450px;
     max-height: 450px;
-    /* transform: translateX(-50px); */
-}
-.about_me .contain_about img{
-    /* max-width: 450px; */
+} */
+/* .about_me .contain_about img{
     width: 115%;
     height: 450px;
     border-radius: 0 50% 50% 50%;
     object-fit: cover;
     object-position: top ;
     box-shadow: -10px 20px 0px 2px #656565;
-}
+} */
 .about_me .contain_about .info_about{
     position: relative;
 }
@@ -633,8 +631,8 @@ img[alt="js"]:hover + span{
 }
 .about_me .contain_about .info_about span{
     top: 0px;
-    left: 50%;
-    transform: translate(-50%, -55%);
+    /* left: 50%; */
+    transform: translate(-5%, -60%);
 }
 .about_me .contain_about .info_about > div{
     position: relative;
@@ -642,13 +640,13 @@ img[alt="js"]:hover + span{
     color: #fff;
 }
 .about_me .info_about h1{
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 40px;
 }
 .about_me .info_about p,
 .about_me .education_about .item_about p,
 .contact_me .contact_data p{
-    max-width: 40ch;
+    /* max-width: 40ch; */
     font-size: 1.2rem;
     color: #fff;
     line-height: 1.4;
@@ -662,7 +660,7 @@ img[alt="js"]:hover + span{
     display: flex;
     color: #fff;
     position: relative;
-    padding-top: 70px;
+    padding-top: 75px;
 }
 .about_me .education_about .box_edu{
     width: 100%;
